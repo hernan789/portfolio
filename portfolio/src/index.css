@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: black; */
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 767px) {
+  .head {
+    margin-left: 20px; /* Resetear el margen izquierdo */
+  }
+}
+
+/* Estilos para pantallas medianas (768px o más) */
+@media (min-width: 768px) {
+  .head {
+    margin-left: 60px; /* Establecer un margen izquierdo diferente */
+  }
+}
+
+/* Estilos para pantallas grandes (1024px o más) */
+@media (min-width: 1199px) {
+  .head {
+    margin-left: 260px; /* Establecer un margen izquierdo aún mayor */
+  }
+}
