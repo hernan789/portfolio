@@ -15,9 +15,9 @@ const Head: React.FC = () => {
   const secondLine = hover ? "developer." : "Duarte";
 
   return (
-    <div className="mb-[32px] head min-h-svh">
+    <section className="flex head min-h-screen h-auto ">
       <h1
-        className="position:fixed mt-[440px] xl:mt-[420px] text-black leading-none tracking-[-8px] font-[550] text-[120px] xl: lg:text-[135px] xl:text-[180px]"
+        className="mt-[500px] xl:mt-[500px] text-black leading-none sm:tracking-[-2px] md:tracking-[-8px]  font-[550] xl: lg:text-[135px] xl:text-[180px]"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -25,7 +25,7 @@ const Head: React.FC = () => {
         <br />
         {secondLine}
       </h1>
-    </div>
+    </section>
   );
 };
 
