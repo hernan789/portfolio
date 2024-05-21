@@ -21,8 +21,13 @@ body {
     margin-left: 20px;
   }
   :hover.navbar {
-    margin-left: 20px;
+    padding-left: 20px;
+    margin-left: 0px;
+    /* padding-bottom: 200px; */
     background-color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
   }
   .head {
     margin-left: 20px;
@@ -47,16 +52,22 @@ body {
     height: 150px;
     font-size: 200px;
   }
+  .proyectos-h2 {
+    padding-left: 20px;
+    font-size: 70px;
+  }
 }
 
 /* Estilos para pantallas medianas (768px o más) */
 @media (min-width: 768px) {
   .navbar {
-    margin-left: 60px;
+    padding-left: 60px;
   }
   :hover.navbar {
-    margin-left: 60px;
+    padding-left: 60px;
+    padding-bottom: 100px;
     background-color: white;
+    width: max-content;
   }
   .head {
     margin-left: 60px; /* Establecer un margen izquierdo diferente */
@@ -79,15 +90,21 @@ body {
     width: 150px;
     height: 150px;
   }
+  .proyectos-h2 {
+    padding-left: 60px;
+    padding-top: 150px;
+    font-size: 90px;
+  }
 }
 
 /* Estilos para pantallas grandes (1024px o más) */
 @media (min-width: 1199px) {
   .navbar {
-    margin-left: 260px;
+    padding-left: 260px;
   }
   :hover.navbar {
     padding-left: 260px;
+    padding-bottom: 100px;
     background-color: white;
     width: max-content;
   }
@@ -104,6 +121,11 @@ body {
   .logos {
     width: 150px;
     height: 150px;
+  }
+  .proyectos-h2 {
+    padding-left: 260px;
+    padding-top: 150px;
+    font-size: 120px;
   }
 }
 
