@@ -48,13 +48,29 @@ body {
     align-items: center;
   }
   .logos {
-    width: 150px;
+    width: auto;
     height: 150px;
     font-size: 200px;
   }
   .proyectos-h2 {
     padding-left: 20px;
     font-size: 70px;
+  }
+  .proyectos-g {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .proyectos-card {
+    padding-top: 4px;
+  }
+  .contact {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    /* font-size: 120px; */
   }
 }
 
@@ -75,7 +91,8 @@ body {
     font-size: 120px;
   }
   .parrafo {
-    margin-left: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
     align-items: center;
     font-size: 20px;
   }
@@ -87,13 +104,24 @@ body {
     align-items: center;
   }
   .logos {
-    width: 150px;
+    width: auto;
     height: 150px;
   }
   .proyectos-h2 {
     padding-left: 60px;
     padding-top: 150px;
     font-size: 90px;
+  }
+  .proyectos-g {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 40px;
+  }
+  .contact {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 130px;
+    /* font-size: 120px; */
   }
 }
 
@@ -107,6 +135,7 @@ body {
     padding-bottom: 100px;
     background-color: white;
     width: max-content;
+    opacity: 100%;
   }
   .head {
     margin-left: 260px; /* Establecer un margen izquierdo aún mayor */
@@ -114,18 +143,37 @@ body {
     font-size: 120px;
   }
   .parrafo {
-    margin-left: 20px;
-    font-size: 40px;
+    margin-left: 260px;
+    margin-right: 260px;
+    font-size: 50px;
     align-items: center;
   }
   .logos {
-    width: 150px;
+    width: auto;
     height: 150px;
+  }
+  .contact {
+    padding-left: 260px;
+    padding-right: 260px;
+    padding-top: 130px;
+    /* font-size: 120px; */
   }
   .proyectos-h2 {
     padding-left: 260px;
     padding-top: 150px;
-    font-size: 120px;
+    font-size: 90px;
+  }
+  .proyectos-g {
+    padding-left: 260px;
+    padding-right: 260px;
+    font-size: 35px;
+    grid-column: 1 / span 11;
+    grid-column-start: 1;
+    grid-column-end: span 11;
+  }
+
+  .img-proyect {
+    width: auto;
   }
 }
 

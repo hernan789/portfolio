@@ -1,9 +1,41 @@
+// import { ProjectInfo } from "../assets/Proyects/Info";
+
 const Projects: React.FC = () => {
   return (
-    <section className="bg-black min-h-screen text-white">
+    <section className="bg-black min-h-full text-white pb-10">
       <h2 className="proyectos-h2 font-[550] leading-none sm:tracking-[-2px] md:tracking-[-4px]  text-white">
         Projects
       </h2>
+      <div className="proyectos-g grid grid-cols-1 md:grid-cols-2 gap-10 text-white font-medium  mt-10">
+        <div className="border-t-2 border-white bg-black flex flex-col hover:bg-[#ff0] hover:text-black hover:p-[5%]  hover:border-0  ">
+          <h3 className="pt-4">Fast Delivery</h3>
+          <img
+            className="mt-8 img-proyect"
+            src="https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          />
+        </div>
+        <div className="border-t-2 border-white bg-black flex flex-col hover:bg-[#ff0] hover:text-black hover:p-[5%] hover:border-0 ">
+          <h3 className="pt-4">Fast Delivery</h3>
+          <img
+            className="mt-8 img-proyect"
+            src="https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          />
+        </div>
+        <div className="border-t-2 border-white bg-black flex flex-col hover:bg-[#ff0] hover:text-black hover:p-[5%]  hover:border-0  ">
+          <h3 className="pt-4">Fast Delivery</h3>
+          <img
+            className="mt-8 img-proyect"
+            src="https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          />
+        </div>
+        <div className="border-t-2 border-white bg-black flex flex-col hover:bg-[#ff0] hover:text-black hover:p-[5%]  hover:border-0   ">
+          <h3 className="pt-4">Fast Delivery</h3>
+          <img
+            className="mt-8 img-proyect"
+            src="https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          />
+        </div>
+      </div>
     </section>
   );
 };
