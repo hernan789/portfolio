@@ -1,20 +1,17 @@
 import { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 const Nabvar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const [scrolled, setScrolled] = useState(false);
-
+  const [scrolled, setScrolled] = useState(0);
+  const [hovered, setHovered] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      if (offset > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(offset);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -22,12 +19,15 @@ const Nabvar: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const opacity = Math.max(1 - scrolled / 200, 0);
 
   return (
     <div
       className={`navbar fixed w-screen transition-all duration-300 ${
         scrolled ? "h-16" : "h-32"
       } z-50`}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       <button
         className="text-black font-medium text-2xl md:hidden"
@@ -44,45 +44,77 @@ const Nabvar: React.FC = () => {
       >
         <ul
           className={`md:flex md:relative md:mt-0 lg:flex sm:columns-1 transition-transform duration-500 ${
-            scrolled ? "transform  opacity-0" : "opacity-100"
+            scrolled && !hovered ? "transform  opacity" : "opacity-100"
           }`}
+          style={{ opacity: hovered ? 1 : opacity }}
         >
           <li className="mr-6 ">
-            <a
-              className="text-black font-medium hover:underline text-xl"
-              href="#"
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={500}
+              className="text-white cursor-pointer"
             >
-              About Me
-            </a>
+              <a className="text-black font-medium hover:underline text-xl">
+                About Me
+              </a>
+            </ScrollLink>
           </li>
           <li className="mr-6">
-            <a
-              className="text-black font-medium hover:underline text-xl"
-              href="#"
+            <ScrollLink
+              to="technologies"
+              smooth={true}
+              duration={500}
+              className="text-white cursor-pointer"
             >
-              Technologies
-            </a>
+              <a className="text-black font-medium hover:underline text-xl">
+                Technologies
+              </a>
+            </ScrollLink>
           </li>
           <li className="mr-6">
-            <a
-              className="text-black font-medium hover:underline text-xl"
-              href="#"
+            <ScrollLink
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="text-white cursor-pointer"
             >
-              Projects
-            </a>
+              <a
+                className="text-black font-medium hover:underline text-xl"
+                href="#"
+              >
+                Projects
+              </a>
+            </ScrollLink>
           </li>
           <li className="mr-6">
-            <a
-              className="text-black font-medium hover:underline  text-xl"
-              href="#"
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="text-white cursor-pointer"
             >
-              Contact
-            </a>
+              <a
+                className="text-black font-medium hover:underline  text-xl"
+                href="#"
+              >
+                Contact
+              </a>
+            </ScrollLink>
           </li>
         </ul>
       </div>
-      {scrolled && (
-        <div className="bg-black w-8 h-8 rounded-full transition-all duration-1000 pl-0"></div>
+      {scrolled > 50 && (
+        <ScrollLink
+          to="head"
+          smooth={true}
+          duration={500}
+          className="text-white cursor-pointer"
+        >
+          <div className="absolute left-24 top-7">
+            <div className="max-sm:hidden bg-black w-8 h-8 rounded-full transition-all duration-1000"></div>
+          </div>
+        </ScrollLink>
       )}
     </div>
   );
