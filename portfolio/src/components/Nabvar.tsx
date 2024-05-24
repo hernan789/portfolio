@@ -111,7 +111,7 @@ const Nabvar: React.FC = () => {
           duration={500}
           className="text-white cursor-pointer"
         >
-          <div className="absolute left-24 top-7">
+          <div className="absolute left-44 top-7">
             <div className="max-sm:hidden bg-black w-8 h-8 rounded-full transition-all duration-1000"></div>
           </div>
         </ScrollLink>
