@@ -1,5 +1,5 @@
-// import { ProjectInfo } from "../assets/Proyects/Info";
-
+import { projectsInfo } from "../assets/Proyects/Info";
+import { Link } from "react-router-dom";
 const Projects: React.FC = () => {
   return (
     <section className="bg-black min-h-full text-white pb-10">
@@ -7,6 +7,22 @@ const Projects: React.FC = () => {
         Projects
       </h2>
       <div className="proyectos-g grid grid-cols-1 md:grid-cols-2 gap-10 text-white font-medium  mt-10">
+        {projectsInfo.map((project: any, i: any) => {
+          return (
+            <Link to={`/project/${project.displayName}`}>
+              <div
+                key={i}
+                className="border-t-2 border-white bg-black flex flex-col hover:bg-[#ff0] hover:text-black hover:p-[5%]  hover:border-0  "
+              >
+                <h3 className="pt-4">{project.name}</h3>
+
+                <img className="mt-8 img-proyect" src={project.path} />
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+      {/* <div className="proyectos-g grid grid-cols-1 md:grid-cols-2 gap-10 text-white font-medium  mt-10">
         <div className="border-t-2 border-white bg-black flex flex-col hover:bg-[#ff0] hover:text-black hover:p-[5%]  hover:border-0  ">
           <h3 className="pt-4">Fast Delivery</h3>
           <img
@@ -35,7 +51,7 @@ const Projects: React.FC = () => {
             src="https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
