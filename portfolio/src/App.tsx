@@ -6,7 +6,10 @@ import About from "./components/About";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import ProjectDetail from "./components/ProjectDetail";
+import ProyectDetail from "./components/ProjectDetail";
+// import MiTurnoWeb from "./components/MiTurnoWeb";
+// import Tmdb from "./components/Tmdb";
+// import Training from "./components/TrainingProjects";
 
 function App() {
   return (
@@ -36,8 +39,14 @@ function App() {
         />
       </Route>
       <Route element={<NoNavbarLayout />}>
-        <Route path="/project/:projectName" element={<ProjectDetail />} />
+        <Route path="/project/:projectName" element={<ProyectDetail />} />
       </Route>
+      {/* <Route element={<NoNavbarLayout />}>
+        <Route path="/project/:fast" element={<ProyectDetail />} />
+        <Route path="/project/:turno" element={<MiTurnoWeb />} />
+        <Route path="/project/:tmdb" element={<Tmdb />} />
+        <Route path="/project/:training" element={<Training />} />
+      </Route> */}
     </Routes>
   );
 }

@@ -209,7 +209,7 @@ const About: React.FC = () => {
           }, 4000); // Wait 1 second before starting the next word
         }
       }
-    }, 60); // Adjust the speed of typing here
+    }, 80); // Adjust the speed of typing here
 
     return () => clearInterval(interval);
   }, [charIndex, currentWordIndex1, currentWordIndex2, phase]);

@@ -71,6 +71,14 @@ body {
     grid-column-start: 1;
     grid-column-end: span 11;
   }
+  .proyectos-texto-derecha {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    grid-column: 1;
+    grid-column-start: 1;
+  }
   .proyectos-card {
     padding-top: 4px;
   }
@@ -129,6 +137,11 @@ body {
     padding-left: 60px;
     padding-right: 60px;
     font-size: 20px;
+  }
+  .proyectos-texto-derecha {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
   }
 
   .contact {
@@ -191,12 +204,25 @@ body {
     padding-right: 260px;
     font-size: 20px;
   }
+  .proyectos-texto-derecha {
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 15px;
+    padding-top: 45%;
+  }
 
   .img-proyect {
     width: auto;
   }
 }
-
+@media (min-width: 1560px) {
+  .proyectos-texto-derecha {
+    padding-left: 80px;
+    padding-right: 120px;
+    font-size: 30px;
+    padding-top: 20%;
+  }
+}
 .efectoRevealOut {
   animation-name: efectoRevealOut;
   animation-duration: 1s;
