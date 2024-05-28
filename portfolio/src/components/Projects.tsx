@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
       <div className="proyectos-g grid grid-cols-1 md:grid-cols-2 gap-10 text-white font-medium  mt-10">
         {projectsInfo.map((project: any, i: any) => {
           return (
-            <Link to={`/project/${project.displayName}`}>
+            <Link to={`/${project.displayName}`}>
               <div
                 key={i}
                 className="border-t-2 border-white bg-black flex flex-col hover:bg-[#ff0] hover:text-black hover:p-[5%]  hover:border-0  "
