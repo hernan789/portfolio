@@ -1,14 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import NavbarLayout from "./NabvarLayout";
-import NoNavbarLayout from "./NonNabvarLayout";
+import ProjectsNabvarLayout from "../src/ProjectsNavbarLayout";
 import Head from "./components/Head";
 import About from "./components/About";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ProyectDetail from "./components/ProjectDetail";
-// import MiTurnoWeb from "./components/MiTurnoWeb";
-// import Tmdb from "./components/Tmdb";
+
+import MiTurnoWeb from "./components/MiTurnoWeb";
+import Tmdb from "./components/Tmdb";
 // import Training from "./components/TrainingProjects";
 
 function App() {
@@ -38,12 +39,14 @@ function App() {
           }
         />
       </Route>
-      <Route element={<NoNavbarLayout />}>
-        <Route path="/project/:projectName" element={<ProyectDetail />} />
+      <Route element={<ProjectsNabvarLayout />}>
+        <Route path="/fast" element={<ProyectDetail />} />
+        <Route path="/turno" element={<MiTurnoWeb />} />
+        <Route path="/tmdb" element={<Tmdb />} />
       </Route>
       {/* <Route element={<NoNavbarLayout />}>
         <Route path="/project/:fast" element={<ProyectDetail />} />
-        <Route path="/project/:turno" element={<MiTurnoWeb />} />
+        
         <Route path="/project/:tmdb" element={<Tmdb />} />
         <Route path="/project/:training" element={<Training />} />
       </Route> */}

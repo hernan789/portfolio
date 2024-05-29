@@ -29,6 +29,16 @@ body {
     height: 100%;
     font-size: 50px;
   }
+  .projectsNavbar {
+    margin-left: 20px;
+  }
+  /* :hover.projectsNavbar {
+    margin-left: 20px;
+    padding-bottom: 100px;
+    background-color: black;
+    width: max-content;
+    color: black;
+  } */
   .head {
     margin-left: 20px;
 
@@ -101,6 +111,16 @@ body {
     background-color: white;
     width: max-content;
   }
+  .projectsNavbar {
+    padding-left: 60px;
+  }
+  /* :hover.projectsNavbar {
+    padding-left: 60px;
+    padding-bottom: 100px;
+    background-color: black;
+    width: max-content;
+    color: black;
+  } */
   .head {
     margin-left: 60px; /* Establecer un margen izquierdo diferente */
 
@@ -164,6 +184,16 @@ body {
     width: max-content;
     opacity: 100%;
   }
+  .projectsNavbar {
+    padding-left: 260px;
+  }
+  /* :hover.projectsNavbar {
+    padding-left: 260px;
+    padding-bottom: 100px;
+    background-color: white;
+    width: max-content;
+    color: black;
+  } */
   .head {
     margin-left: 260px; /* Establecer un margen izquierdo aún mayor */
 

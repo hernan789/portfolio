@@ -1,18 +1,14 @@
 import { Link } from "react-router-dom";
 import { projectsInfo } from "../assets/Proyects/Info";
-function ProjectDetail() {
-  // const { fast } = useParams<{ fast: string }>();
+function Tmdb() {
+  // const { turno } = useParams<{ turno: string }>();
 
-  // const project = projectsInfo.filter((project) => {
-  //   return projectName == project.displayName;
-  // });
   const project = projectsInfo.filter((project) => {
-    return "fast" == project.displayName;
+    return "tmdb" == project.displayName;
   });
-
-  // console.log(fast);
+  console.log(project);
   return (
-    <section className="bg-black min-h-full  text-white ">
+    <section className="bg-white min-h-full  text-black ">
       {/* <div className="bg-black  h-[100px] pb-[10%]">
         <Link to="/">
           <div className="absolute top-7 min-[120px]:left-4 sm:left-14 md:left-[180px]">
@@ -23,48 +19,64 @@ function ProjectDetail() {
           </div>
         </Link>
       </div> */}
-      <h2 className="proyectos-h2 font-[550] pt-[30%] leading-none sm:tracking-[-2px] md:tracking-[-4px] text-white">
+      <h2 className="proyectos-h2 font-[550] pt-[30%] leading-none sm:tracking-[-2px] md:tracking-[-4px] text-black">
         {project[0].name}
       </h2>
       <div className="proyectos-x grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 pt-16">
         <p className="">{project[0].description} </p>
         <div className="">
-          <h2 className="text-white border-b-1 border-white pb-2">
+          <h2 className="text-black border-b-1 border-white pb-2">
             {project[0].detail1}
           </h2>
-          <h2 className="text-white border-t-2 border-white py-2">
+          <h2 className="text-black border-t-2 border-white py-2">
             {project[0].detail2}
           </h2>
-          <h2 className="text-white border-t-2 border-white py-2">
+          <h2 className="text-black border-t-2 border-white py-2">
             {project[0].detail3}
           </h2>
         </div>
       </div>
-      <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col sm:flex-row gap-14">
-        <img className="mt-8 img-proyect rounded" src={project[0].path6} />
-        <div className="proyectos-texto-derecha font-medium italic pt-[20%]">
+      <div className="grid justify-items-center mt-40">
+        <img className=" img-proyect rounded " src={project[0].path2} />
+      </div>
+      <div className="grid justify-items-center pb-[10%]">
+        <div className="proyectos-g pt-[10%] font-medium italic">
           {project[0].description}{" "}
         </div>
       </div>
-      <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col sm:flex-row gap-14 pb-[10%]">
+      <div className="proyectos-x pt-[7%] pl-[10%] flex flex-col sm:flex-row gap-14 pb-[10%]  bg-orange-500">
         <div className="proyectos-texto-derecha font-medium italic justify pt-[20%]">
           {project[0].description}{" "}
         </div>
-        <img className="mt-8 img-proyect rounded" src={project[0].path5} />
+        <img className="mt-8 img-proyect rounded" src={project[0].path4} />
       </div>
-
       {/* <div className="max-w-screen flex flex-col items-center justify-center min-h-screen pb-[8%]">
           <img className="mt-8 img-proyect rounded" src={project[0].path} />
         </div> */}
       {/* Aquí puedes agregar más detalles del proyecto */}
       <section className="min-h-full">
-        <div className="grid justify-center pt-[5%]  pb-[5%] bg-yellow-100 ">
-          <img className="mt-8 img-proyect rounded" src={project[0].path6} />
+        <div className="grid justify-center pt-[5%]  pb-[5%] bg-black">
+          <h2 className="proyectos-h2 text-white font-medium sm:tracking-[-2px] md:tracking-[-2px]">
+            Teamwork is the key
+          </h2>
+          <p className="proyectos-texto-derecha font-medium italic justify pt-[20%] text-white "></p>
+          <div className="grid justify-center pt-[5%]  pb-[5%] bg-black">
+            <img
+              className="mt-8 grid justify-center  img-proyect rounded"
+              src={project[0].path3}
+            />
+          </div>
         </div>
         {/* <div className="grid justify-items-end pt-[5%]  pr-[10%]  bg-yellow-100  pb-[5%]">
           <img className="mt-8 img-proyect rounded" src={project[0].path5} />
         </div> */}
       </section>
+      {/* <section className="min-h-full">
+        <div className="grid justify-center pt-[5%]  pb-[5%] bg-yellow-100 ">
+          <img className="mt-8 img-proyect rounded" src={project[0].path5} />
+        </div>
+    
+      </section> */}
 
       <div className=" min-h-full align-middle  bg-black flex flex-col text-white text-xl font-medium ">
         <div className="flex flex-row justify-evenly py-[3%]">
@@ -102,22 +114,4 @@ function ProjectDetail() {
   );
 }
 
-export default ProjectDetail;
-
-// import { useParams } from "react-router-dom";
-
-// function ProjectDetail() {
-//   const { projectName } = useParams<{ projectName: string }>();
-//   console.log(projectName);
-//   return (
-//     <section className="bg-black min-h-full text-white pb-10">
-//       <h2 className="proyectos-h2 font-[550] leading-none sm:tracking-[-2px] md:tracking-[-4px]  text-white">
-//         {projectName}
-//       </h2>
-
-//       {/* Aquí puedes agregar más detalles del proyecto */}
-//     </section>
-//   );
-// }
-
-// export default ProjectDetail;
+export default Tmdb;
