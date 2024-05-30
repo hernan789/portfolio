@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { projectsInfo } from "../assets/Proyects/Info";
+import { useEffect } from "react";
 function Tmdb() {
   // const { turno } = useParams<{ turno: string }>();
-
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   const project = projectsInfo.filter((project) => {
     return "tmdb" == project.displayName;
   });

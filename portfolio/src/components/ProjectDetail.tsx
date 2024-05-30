@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import { projectsInfo } from "../assets/Proyects/Info";
+import { useEffect } from "react";
 function ProjectDetail() {
-  // const { fast } = useParams<{ fast: string }>();
-
-  // const project = projectsInfo.filter((project) => {
-  //   return projectName == project.displayName;
-  // });
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   const project = projectsInfo.filter((project) => {
     return "fast" == project.displayName;
   });

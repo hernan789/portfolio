@@ -6,6 +6,7 @@ const ProjectsNavbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [scrolled, setScrolled] = useState(0);
   const [hovered, setHovered] = useState(false);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -21,7 +22,9 @@ const ProjectsNavbar: React.FC = () => {
     };
   }, []);
   const opacity = Math.max(1 - scrolled / 200, 0);
-
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div
       className={`projectsNavbar fixed w-screen transition-all duration-300 ${
@@ -54,7 +57,7 @@ const ProjectsNavbar: React.FC = () => {
               to="/"
               className="absolute left-2 top-1 text-white cursor-pointer"
             >
-              <a className=" text-white font-medium hover:underline text-xl">
+              <a className=" text-white font-medium hover:underline text-xl ">
                 Back
               </a>
             </Link>
@@ -110,7 +113,7 @@ const ProjectsNavbar: React.FC = () => {
           duration={500}
           className="text-white cursor-pointer"
         >
-          <div className="absolute left-12 top-13">
+          <div className="absolute left-12 top-[35px]" onClick={scrollToTop}>
             <div className="font-medium text-xl pb-0 ">Hernán Duarte</div>
             {/* <div className="max-sm:hidden bg-white w-8 h-8 rounded-full transition-all duration-1000"></div> */}
           </div>

@@ -16,6 +16,10 @@ import frontMac from "../Proyects/Images/TMDB/frontMac.png";
 import front1 from "../Proyects/Images/TMDB/front.png";
 import loginCel from "../Proyects/Images/TMDB/LoginCel.png";
 import loginPad from "../Proyects/Images/TMDB/LoginIpad.png";
+import colorgame from "../Proyects/Images/Training/colorgame.png";
+import colorgameIphone from "../Proyects/Images/Training/colorgameIphone.png";
+import weather from "../Proyects/Images/Training/weather.png";
+import todolist from "../Proyects/Images/Training/todolist.png";
 interface ProjectInfo {
   name: string;
   path: string;
@@ -48,7 +52,7 @@ export const projectsInfo: ProjectInfo[] = [
     detail1: "I worked on both the front end and the back end. ",
     detail2:
       "Technologies: Typescript, Next.js, Tailwind CSS, Jest, Postman, Express, Docker, Sequelize, PostgreSQL, S3, AWS.",
-    detail3: "Login",
+    detail3: "2024",
     link1: "xxxx",
     link2: "xxxx",
   },
@@ -94,16 +98,17 @@ export const projectsInfo: ProjectInfo[] = [
   },
   {
     name: "Training projects",
-    path: "https://images.unsplash.com/photo-1449867727329-3294ea016353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    path: colorgame,
 
-    path2: deliveryDrivers,
-    path3: map,
-    path4: profile,
+    path2: colorgameIphone,
+    path3: weather,
+    path4: todolist,
     path5: register,
     path6: admin,
     displayName: "training",
     description: "xxxx",
-    detail1: "xxx",
+    detail1:
+      "All the projects in here are not actually projects but excercises. Beginner, amateur excercises. All of them were made with the technologies known at the moment, and were made with great enthusiasm for learning and making another step in my developer career. Consider this excersices bellow as pictures of me as a baby. And do not forget to try them!",
     detail2: "xxxx",
     detail3: "xxxx",
     link1: "xxxx",

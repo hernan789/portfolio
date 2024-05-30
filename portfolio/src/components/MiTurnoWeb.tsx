@@ -1,10 +1,14 @@
 import { projectsInfo } from "../assets/Proyects/Info";
+import { useEffect } from "react";
 function MiTurnoWeb() {
   // const { turno } = useParams<{ turno: string }>();
 
   const project = projectsInfo.filter((project) => {
     return "turno" == project.displayName;
   });
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, []);
   console.log(project);
   return (
     <section className="bg-[#ff0] min-h-full  text-black ">
