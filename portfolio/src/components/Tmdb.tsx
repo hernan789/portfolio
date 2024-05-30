@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { projectsInfo } from "../assets/Proyects/Info";
 import { useEffect } from "react";
 function Tmdb() {
-  // const { turno } = useParams<{ turno: string }>();
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -12,16 +11,6 @@ function Tmdb() {
   console.log(project);
   return (
     <section className="bg-white min-h-full  text-black ">
-      {/* <div className="bg-black  h-[100px] pb-[10%]">
-        <Link to="/">
-          <div className="absolute top-7 min-[120px]:left-4 sm:left-14 md:left-[180px]">
-            <div className=" bg-white w-8 h-8 rounded-full transition-all duration-1000"></div>
-            <h6 className="absolute left-20 top-1 text-white text-xl font-medium hover:underline">
-              Volver
-            </h6>
-          </div>
-        </Link>
-      </div> */}
       <h2 className="proyectos-h2 font-[550] pt-[30%] leading-none sm:tracking-[-2px] md:tracking-[-4px] text-black">
         {project[0].name}
       </h2>
@@ -53,10 +42,7 @@ function Tmdb() {
         </div>
         <img className="mt-8 img-proyect rounded" src={project[0].path4} />
       </div>
-      {/* <div className="max-w-screen flex flex-col items-center justify-center min-h-screen pb-[8%]">
-          <img className="mt-8 img-proyect rounded" src={project[0].path} />
-        </div> */}
-      {/* Aquí puedes agregar más detalles del proyecto */}
+
       <section className="min-h-screen">
         <div className="grid justify-center pt-[5%] pb-[5%] bg-black">
           <h2 className="proyectos-h2 text-white font-medium sm:tracking-[-2px] md:tracking-[-2px]">
@@ -70,16 +56,7 @@ function Tmdb() {
             />
           </div>
         </div>
-        {/* <div className="grid justify-items-end pt-[5%]  pr-[10%]  bg-yellow-100  pb-[5%]">
-          <img className="mt-8 img-proyect rounded" src={project[0].path5} />
-        </div> */}
       </section>
-      {/* <section className="min-h-full">
-        <div className="grid justify-center pt-[5%]  pb-[5%] bg-yellow-100 ">
-          <img className="mt-8 img-proyect rounded" src={project[0].path5} />
-        </div>
-    
-      </section> */}
 
       <div className=" min-h-full align-middle  bg-black flex flex-col text-white text-xl font-medium ">
         <div className="flex flex-row justify-evenly py-[3%]">

@@ -6,7 +6,7 @@ import About from "./components/About";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import ProyectDetail from "./components/ProjectDetail";
+import FastDelivery from "./components/FastDelivery";
 
 import MiTurnoWeb from "./components/MiTurnoWeb";
 import Tmdb from "./components/Tmdb";
@@ -40,7 +40,7 @@ function App() {
         />
       </Route>
       <Route element={<ProjectsNabvarLayout />}>
-        <Route path="/fast" element={<ProyectDetail />} />
+        <Route path="/fast" element={<FastDelivery />} />
         <Route path="/turno" element={<MiTurnoWeb />} />
         <Route path="/tmdb" element={<Tmdb />} />
         <Route path="/training" element={<Training />} />

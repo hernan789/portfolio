@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { projectsInfo } from "../assets/Proyects/Info";
 import { useEffect } from "react";
-function ProjectDetail() {
+function FastDelivery() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
@@ -9,19 +9,8 @@ function ProjectDetail() {
     return "fast" == project.displayName;
   });
 
-  // console.log(fast);
   return (
     <section className="bg-black min-h-full  text-white ">
-      {/* <div className="bg-black  h-[100px] pb-[10%]">
-        <Link to="/">
-          <div className="absolute top-7 min-[120px]:left-4 sm:left-14 md:left-[180px]">
-            <div className=" bg-white w-8 h-8 rounded-full transition-all duration-1000"></div>
-            <h6 className="absolute left-20 top-1 text-white text-xl font-medium hover:underline">
-              Volver
-            </h6>
-          </div>
-        </Link>
-      </div> */}
       <h2 className="proyectos-h2 font-[550] pt-[30%] leading-none sm:tracking-[-2px] md:tracking-[-4px] text-white">
         {project[0].name}
       </h2>
@@ -53,17 +42,10 @@ function ProjectDetail() {
         <img className="mt-8 img-proyect rounded" src={project[0].path5} />
       </div>
 
-      {/* <div className="max-w-screen flex flex-col items-center justify-center min-h-screen pb-[8%]">
-          <img className="mt-8 img-proyect rounded" src={project[0].path} />
-        </div> */}
-      {/* Aquí puedes agregar más detalles del proyecto */}
       <section className="min-h-full">
         <div className="grid justify-center pt-[5%]  pb-[5%] bg-yellow-100 ">
           <img className="mt-8 img-proyect rounded" src={project[0].path6} />
         </div>
-        {/* <div className="grid justify-items-end pt-[5%]  pr-[10%]  bg-yellow-100  pb-[5%]">
-          <img className="mt-8 img-proyect rounded" src={project[0].path5} />
-        </div> */}
       </section>
 
       <div className=" min-h-full align-middle  bg-black flex flex-col text-white text-xl font-medium ">
@@ -102,22 +84,4 @@ function ProjectDetail() {
   );
 }
 
-export default ProjectDetail;
-
-// import { useParams } from "react-router-dom";
-
-// function ProjectDetail() {
-//   const { projectName } = useParams<{ projectName: string }>();
-//   console.log(projectName);
-//   return (
-//     <section className="bg-black min-h-full text-white pb-10">
-//       <h2 className="proyectos-h2 font-[550] leading-none sm:tracking-[-2px] md:tracking-[-4px]  text-white">
-//         {projectName}
-//       </h2>
-
-//       {/* Aquí puedes agregar más detalles del proyecto */}
-//     </section>
-//   );
-// }
-
-// export default ProjectDetail;
+export default FastDelivery;
