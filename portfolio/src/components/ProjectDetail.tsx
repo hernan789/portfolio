@@ -43,7 +43,8 @@ function ProjectDetail() {
       <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col sm:flex-row gap-14">
         <img className="mt-8 img-proyect rounded" src={project[0].path6} />
         <div className="proyectos-texto-derecha font-medium italic pt-[20%]">
-          {project[0].description}{" "}
+          A personal constant challenge: to learn and acquire new technologies
+          and apply them accurately and creatively.
         </div>
       </div>
       <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col sm:flex-row gap-14 pb-[10%]">
