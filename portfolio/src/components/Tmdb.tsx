@@ -54,10 +54,10 @@ function Tmdb() {
           <img className="mt-8 img-proyect rounded" src={project[0].path} />
         </div> */}
       {/* Aquí puedes agregar más detalles del proyecto */}
-      <section className="min-h-full">
-        <div className="grid justify-center pt-[5%]  pb-[5%] bg-black">
+      <section className="min-h-screen">
+        <div className="grid justify-center pt-[5%] pb-[5%] bg-black">
           <h2 className="proyectos-h2 text-white font-medium sm:tracking-[-2px] md:tracking-[-2px]">
-            Teamwork is the key
+            Kill em all
           </h2>
           <p className="proyectos-texto-derecha font-medium italic justify pt-[20%] text-white "></p>
           <div className="grid justify-center pt-[5%]  pb-[5%] bg-black">

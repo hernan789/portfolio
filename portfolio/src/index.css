@@ -92,6 +92,11 @@ body {
   .proyectos-card {
     padding-top: 4px;
   }
+  .parrafo-resaltado {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  }
   .contact {
     padding-left: 20px;
     padding-right: 20px;
@@ -163,6 +168,11 @@ body {
     padding-right: 20px;
     font-size: 15px;
   }
+  .parrafo-resaltado {
+    font-size: 18px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
   .contact {
     padding-left: 60px;
@@ -232,13 +242,18 @@ body {
   .proyectos-x {
     padding-left: 260px;
     padding-right: 260px;
-    font-size: 20px;
+    font-size: 23px;
   }
   .proyectos-texto-derecha {
     padding-left: 20px;
     padding-right: 10px;
     font-size: 15px;
     padding-top: 45%;
+  }
+  .parrafo-resaltado {
+    font-size: 25px;
+    padding-left: 260px;
+    padding-right: 260px;
   }
 
   .img-proyect {

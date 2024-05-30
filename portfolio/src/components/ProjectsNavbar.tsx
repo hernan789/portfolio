@@ -103,18 +103,22 @@ const ProjectsNavbar: React.FC = () => {
           </li> */}
         </ul>
       </div>
-      {
+      {scrolled > 50 && (
         <ScrollLink
           to="head"
           smooth={true}
           duration={500}
           className="text-white cursor-pointer"
         >
-          <div className="absolute left-44 top-15">
-            <div className="max-sm:hidden bg-white w-8 h-8 rounded-full transition-all duration-1000"></div>
+          <div className="absolute left-12 top-13">
+            <div className="font-medium text-xl pb-0 ">Hernán Duarte</div>
+            {/* <div className="max-sm:hidden bg-white w-8 h-8 rounded-full transition-all duration-1000"></div> */}
           </div>
+          {/* <div className="absolute left-44 top-15">
+            <div className="max-sm:hidden bg-white w-8 h-8 rounded-full transition-all duration-1000"></div>
+          </div> */}
         </ScrollLink>
-      }
+      )}
     </div>
   );
 };

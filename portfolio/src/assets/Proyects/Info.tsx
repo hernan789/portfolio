@@ -9,7 +9,7 @@ import NewPackage from "../Proyects/Images/FastDelivery/newpackage.png";
 import Login from "../Proyects/Images/MiTurnoWeb/LoginGalaxy.png";
 import Register from "../Proyects/Images/MiTurnoWeb/RegisterIpad.png";
 import SuccessfullRegister from "../Proyects/Images/MiTurnoWeb/SuccessfullRegister.png";
-import Scheduling from "../Proyects/Images/MiTurnoWeb/MacBookAir.png";
+import Scheduling from "../Proyects/Images/MiTurnoWeb/metrics.png";
 import front from "../Proyects/Images/MiTurnoWeb/front.png";
 import demo from "../Proyects/Images/MiTurnoWeb/Demo.png";
 import frontMac from "../Proyects/Images/TMDB/frontMac.png";
@@ -47,13 +47,13 @@ export const projectsInfo: ProjectInfo[] = [
       "Application for last-mile logistics companies. It allows monitoring shipments from the administrator role and includes an interface for delivery drivers, where they can select packages and control the status of their account. ",
     detail1: "I worked on both the front end and the back end. ",
     detail2:
-      "Technologies: Typescript, Next.js, Tailwind CSS, Jest, Docker, Sequelize, PostgreSQL, S3, AWS.",
+      "Technologies: Typescript, Next.js, Tailwind CSS, Jest, Postman, Express, Docker, Sequelize, PostgreSQL, S3, AWS.",
     detail3: "Login",
     link1: "xxxx",
     link2: "xxxx",
   },
   {
-    name: "Scheduling App",
+    name: "Mi Turno Web",
     path: front,
 
     path2: Login,
@@ -64,14 +64,14 @@ export const projectsInfo: ProjectInfo[] = [
     path7: demo,
     displayName: "turno",
     description:
-      "This group project involved creating a web application that provides companies with a platform for their customers to schedule appointments.",
+      "This group project entailed developing a web application designed to offer companies a platform for their customers to schedule appointments. It included three distinct interfaces tailored for administrators, branch managers, and clients. The client interface granted access to a calendar displaying available dates and schedules for booking.",
     detail1: "I worked on both the front end and the back end.",
     detail2:
-      "We used the SCRUM methodology and presented our progress weekly in front of a jury. We utilized Trello and Github.",
+      "We used the SCRUM methodology and presented our progress weekly in front of a jury. We utilized Discord, Figma, Trello and Github.",
     detail3:
-      "Technologies: PostgreSQL, Sequelize, Node.js, Sass, Material UI, Express.js, React.js, and Redux.",
-    link1: "xxxx",
-    link2: "xxxx",
+      "Technologies: PostgreSQL, Sequelize, Node.js, Sass, Material UI, Express.js, Postman, React.js, and Redux.",
+    link1: "https://github.com/BorisManzano/mi-turno-web-front",
+    link2: "https://github.com/bautistagorchs/mi-turno-web-back",
   },
   {
     name: "Aleph Movie Data Base",

@@ -215,27 +215,42 @@ const About: React.FC = () => {
   }, [charIndex, currentWordIndex1, currentWordIndex2, phase]);
 
   return (
-    <div className="bg-[#ff0] min-h-screen  ">
-      <div className="mt-10 align-middle justify-center parrafo text-black italic pt-60 font-bold text-wrap ">
-        <ul className="list-none p-0 m-0">
-          <li className="mb-2">I am a full-stack developer</li>
-          <li>
-            trained in&nbsp;
-            <mark className="font-bold underline">{displayedText1}</mark>
-            &nbsp;passionate about&nbsp;
-          </li>
-          <li className="mb-2">
-            {" "}
-            <mark className="font-bold underline">{displayedText2}</mark>
-            &nbsp;who is ready to&nbsp;
-          </li>
-          {/* <li>ready to</li> */}
-          <mark className="font-bold underline">{displayedText3}.</mark>
-        </ul>
+    <>
+      <div className="bg-[#ff0] min-h-screen  ">
+        <div className="mt-10 align-middle justify-center parrafo text-black italic pt-60 font-bold text-wrap ">
+          <ul className="list-none p-0 m-0">
+            <li className="mb-2">I am a full-stack developer</li>
+            <li>
+              trained in&nbsp;
+              <mark className="font-bold underline underline-offset-8">
+                {displayedText1}
+              </mark>
+              &nbsp;passionate about&nbsp;
+            </li>
+            <li className="mb-2">
+              {" "}
+              <mark className="font-bold underline underline-offset-8">
+                {displayedText2}
+              </mark>
+              &nbsp;who is ready to&nbsp;
+            </li>
+            {/* <li>ready to</li> */}
+            <mark className="font-bold underline underline-offset-8">
+              {displayedText3}.
+            </mark>
+          </ul>
 
-        <mark> </mark>
+          <mark> </mark>
+        </div>
       </div>
-    </div>
+      <div className="bg-black min-h-screen ">
+        <p className="parrafo  text-white italic underline-offset-auto font-medium pt-[15%]">
+          {" "}
+          A personal constant challenge: to learn and acquire new technologies
+          and apply them accurately and creatively.
+        </p>
+      </div>
+    </>
   );
 };
 export default About;

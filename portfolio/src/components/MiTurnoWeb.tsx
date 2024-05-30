@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { projectsInfo } from "../assets/Proyects/Info";
 function MiTurnoWeb() {
   // const { turno } = useParams<{ turno: string }>();
@@ -22,16 +21,16 @@ function MiTurnoWeb() {
       <h2 className="proyectos-h2 font-[550] pt-[30%] leading-none sm:tracking-[-2px] md:tracking-[-4px] text-black">
         {project[0].name}
       </h2>
-      <div className="proyectos-x grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 pt-16">
+      <div className="proyectos-x font-medium grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 pt-20">
         <p className="">{project[0].description} </p>
         <div className="">
-          <h2 className="text-black border-b-1 border-white pb-2">
+          <h2 className="text-black border-b-1 border-black pb-2">
             {project[0].detail1}
           </h2>
-          <h2 className="text-black border-t-2 border-white py-2">
+          <h2 className="text-black border-t-2 border-black py-2">
             {project[0].detail2}
           </h2>
-          <h2 className="text-black border-t-2 border-white py-2">
+          <h2 className="text-black border-t-2 border-black py-2">
             {project[0].detail3}
           </h2>
         </div>
@@ -41,12 +40,17 @@ function MiTurnoWeb() {
       </div>
       <div className="grid justify-items-center">
         <div className="proyectos-g pt-[10%] font-medium italic">
-          {project[0].description}{" "}
+          The challenge was to identify the appropriate Schema Design and
+          seamlessly integrate the resulting flow into the app by selecting the
+          right tools and technologies.
         </div>
       </div>
       <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col sm:flex-row gap-14 pb-[10%]">
         <div className="proyectos-texto-derecha font-medium italic justify pt-[20%]">
-          {project[0].description}{" "}
+          Every day, we merged all the updates we made using a dedicated branch
+          in accordance with an accurate git flow. I researched available online
+          documentation and utilized creativity to find solutions to the
+          problems we encountered.
         </div>
         <img className="mt-8 img-proyect rounded" src={project[0].path6} />
       </div>
@@ -57,23 +61,39 @@ function MiTurnoWeb() {
       <section className="min-h-full">
         <div className="grid justify-center pt-[5%]  pb-[5%] bg-black">
           <h2 className="proyectos-h2 text-white font-medium sm:tracking-[-2px] md:tracking-[-2px]">
-            Teamwork is the key
+            Communication is the key
           </h2>
-          <p className="proyectos-texto-derecha font-medium italic justify pt-[20%] text-white "></p>
+          <p className="parrafo-resaltado text-justify font-medium italic justify pt-[5%] text-white ">
+            {" "}
+            Communication is essential for creating a positive and dynamic work
+            environment. We used Discord as our meeting platform and held daily
+            meetings every day at 9 am. Additionally, we had planning sessions
+            with a SCRUM master every Monday and demos every Friday, during
+            which we showcased our progress to a jury.
+          </p>
           <div className="grid justify-center pt-[5%]  pb-[5%] bg-black">
             <img
-              className="mt-8 grid justify-center  img-proyect rounded"
+              className="mt-8 grid justify-center img-proyect rounded"
               src={project[0].path7}
             />
           </div>
+          <div className="grid justify-items-end"> </div>
         </div>
         {/* <div className="grid justify-items-end pt-[5%]  pr-[10%]  bg-yellow-100  pb-[5%]">
           <img className="mt-8 img-proyect rounded" src={project[0].path5} />
         </div> */}
       </section>
       <section className="min-h-full">
-        <div className="grid justify-center pt-[5%]  pb-[5%] bg-yellow-100 ">
-          <img className="mt-8 img-proyect rounded" src={project[0].path5} />
+        <div className="grid justify-center pt-[5%] pb-[5%] bg-yellow-100 ">
+          <p className="parrafo-resaltado font-medium pt-[7%] ">
+            For almost two months, we were involved in the project, learning new
+            technologies and honing our soft skills. The final result was
+            applauded by the jury and left us with a great sense of success and
+            confidence in ourselves.
+          </p>
+          <div className="grid justify-center pt-[5%]">
+            <img className="mt-8 img-proyect rounded" src={project[0].path5} />
+          </div>
         </div>
         {/* <div className="grid justify-items-end pt-[5%]  pr-[10%]  bg-yellow-100  pb-[5%]">
           <img className="mt-8 img-proyect rounded" src={project[0].path5} />
@@ -82,16 +102,17 @@ function MiTurnoWeb() {
 
       <div className=" min-h-full align-middle  bg-black flex flex-col text-white text-xl font-medium ">
         <div className="flex flex-row justify-evenly py-[3%]">
-          <Link to={project[0].link1}>
+          <a href={project[0].link1}>
             <button className="w-[200px] h-[50px] text-black mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border">
               Frontend
             </button>
-          </Link>
-          <Link to={project[0].link2}>
+          </a>
+
+          <a href={project[0].link2}>
             <button className="w-[200px] h-[50px] text-black mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border">
               Backend
             </button>
-          </Link>
+          </a>
         </div>
         <footer className="flex flex-col justify-between mt-4 text-medium text-xl border-t-[1px] border-t-white pb-[5%]">
           <ul className="flex flex-row justify-evenly mt-12  ">
