@@ -62,48 +62,6 @@ const ProjectsNavbar: React.FC = () => {
               </a>
             </Link>
           </li>
-          {/* <li className="mr-6">
-            <ScrollLink
-              to="technologies"
-              smooth={true}
-              duration={500}
-              className="text-white cursor-pointer"
-            >
-              <a className="text-black font-medium hover:underline text-xl">
-                Technologies
-              </a>
-            </ScrollLink>
-          </li>
-          <li className="mr-6">
-            <ScrollLink
-              to="projects"
-              smooth={true}
-              duration={500}
-              className="text-white cursor-pointer"
-            >
-              <a
-                className="text-black font-medium hover:underline text-xl"
-                href="#"
-              >
-                Projects
-              </a>
-            </ScrollLink>
-          </li>
-          <li className="mr-6">
-            <ScrollLink
-              to="contact"
-              smooth={true}
-              duration={500}
-              className="text-white cursor-pointer"
-            >
-              <a
-                className="text-black font-medium hover:underline  text-xl"
-                href="#"
-              >
-                Contact
-              </a>
-            </ScrollLink>
-          </li> */}
         </ul>
       </div>
       {scrolled > 50 && (
@@ -115,11 +73,7 @@ const ProjectsNavbar: React.FC = () => {
         >
           <div className="absolute left-12 top-[35px]" onClick={scrollToTop}>
             <div className="font-medium text-xl pb-0 ">Hernán Duarte</div>
-            {/* <div className="max-sm:hidden bg-white w-8 h-8 rounded-full transition-all duration-1000"></div> */}
           </div>
-          {/* <div className="absolute left-44 top-15">
-            <div className="max-sm:hidden bg-white w-8 h-8 rounded-full transition-all duration-1000"></div>
-          </div> */}
         </ScrollLink>
       )}
     </div>
