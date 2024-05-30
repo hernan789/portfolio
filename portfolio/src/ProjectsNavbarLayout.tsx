@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import ProjectsNavbar from "../src/components/ProjectsNavbar";
+
 function ProjectsNavbarLayout() {
   return (
     <>

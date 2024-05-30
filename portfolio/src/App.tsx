@@ -10,7 +10,7 @@ import ProyectDetail from "./components/ProjectDetail";
 
 import MiTurnoWeb from "./components/MiTurnoWeb";
 import Tmdb from "./components/Tmdb";
-// import Training from "./components/TrainingProjects";
+import Training from "./components/TrainingProjects";
 
 function App() {
   return (
@@ -43,6 +43,7 @@ function App() {
         <Route path="/fast" element={<ProyectDetail />} />
         <Route path="/turno" element={<MiTurnoWeb />} />
         <Route path="/tmdb" element={<Tmdb />} />
+        <Route path="/training" element={<Training />} />
       </Route>
       {/* <Route element={<NoNavbarLayout />}>
         <Route path="/project/:fast" element={<ProyectDetail />} />
