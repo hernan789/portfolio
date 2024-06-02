@@ -258,6 +258,7 @@ body {
 
   .img-proyect {
     width: auto;
+    object-fit: cover;
   }
 }
 @media (min-width: 1560px) {

@@ -31,20 +31,40 @@ function FastDelivery() {
       <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col sm:flex-row gap-14">
         <img className="mt-8 img-proyect rounded" src={project[0].path6} />
         <div className="proyectos-texto-derecha font-medium italic pt-[20%]">
-          A personal constant challenge: to learn and acquire new technologies
-          and apply them accurately and creatively.
+          A last-mile logistics company has hundreds of delivery drivers who
+          each receive parcels at the start of the day and must deliver them
+          throughout the day. Thanks to this APP, a company can monitor delivery
+          drivers, assign or reassign packages, and intervene to edit shipments.
         </div>
       </div>
       <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col sm:flex-row gap-14 pb-[10%]">
-        <div className="proyectos-texto-derecha font-medium italic justify pt-[20%]">
-          {project[0].description}{" "}
+        <div className="proyectos-texto-derecha font-medium italic ">
+          The app has two different roles: the delivery driver role, where
+          drivers can freely register and log in to select the packages they
+          will deliver that day; and the administrator role, where the company
+          can see the list of registered delivery drivers, track the number of
+          active drivers with ongoing deliveries, monitor the number of packages
+          assigned to each driver, and create, view, and edit packages to be
+          sent.
         </div>
         <img className="mt-8 img-proyect rounded" src={project[0].path5} />
       </div>
 
-      <section className="min-h-full">
+      <section className="min-h-full bg-yellow-100 pt-[5%] ">
+        <p className="parrafo-resaltado text-justify font-medium italic justify pt-[5%] text-black ">
+          Throughout this project, I honed my expertise in full-stack
+          development, delving deeply into TypeScript and Next.js. Challenges
+          arose in fine-tuning database queries using Sequelize, leading to
+          significant enhancements in my problem-solving prowess and
+          comprehension of scalable solutions. Immersed in the intricacies of
+          front-end and back-end development, I gained valuable insights into
+          crafting efficient, user-friendly interfaces and optimizing
+          server-side functionality. This experience fortified my foundation in
+          software engineering and fueled my passion for tackling complex
+          technical challenges head-on.
+        </p>
         <div className="grid justify-center pt-[5%]  pb-[5%] bg-yellow-100 ">
-          <img className="mt-8 img-proyect rounded" src={project[0].path6} />
+          <img className="mt-8 img-proyect rounded" src={project[0].path4} />
         </div>
       </section>
 

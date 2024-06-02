@@ -133,7 +133,9 @@
 // export default About;
 
 import React, { useState, useEffect } from "react";
-const words1 = ["Software Engineering", "Philosophy", "Linguistics", "Letters"];
+import resume from "../assets/Resumes/Hernan Duarte Resume.pdf";
+import cv from "../assets/Resumes/Hernan Luis Duarte CV (Spanish).pdf";
+const words1 = ["Software Engineering", "Philosophy", "Linguistics"];
 const words2 = ["teamwork", "coding", "studying", "problem solving"];
 const words3 = [
   "work",
@@ -174,7 +176,7 @@ const About: React.FC = () => {
             setCharIndex(0);
             setCurrentWordIndex1((currentWordIndex1 + 1) % words1.length);
             setPhase("second");
-          }, 2000); // Wait 1 second before starting the next word
+          }, 1000); // Wait 1 second before starting the next word
         }
       } else if (phase === "second") {
         const currentWord = words2[currentWordIndex2];
@@ -213,7 +215,20 @@ const About: React.FC = () => {
 
     return () => clearInterval(interval);
   }, [charIndex, currentWordIndex1, currentWordIndex2, phase]);
-
+  const handleDownloadEnglishPdf = () => {
+    const pdfUrl = resume;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Hernán Duarte Resume.pdf";
+    link.click();
+  };
+  const handleDownloadSpanishPdf = () => {
+    const pdfUrl = cv;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Hernán Duarte CV Spanish.pdf";
+    link.click();
+  };
   return (
     <>
       <div className="bg-[#ff0] min-h-screen  ">
@@ -243,13 +258,52 @@ const About: React.FC = () => {
           <mark> </mark>
         </div>
       </div>
-      <div className="bg-black min-h-screen ">
-        <p className="parrafo  text-white italic underline-offset-auto font-medium pt-[15%]">
-          {" "}
-          A personal constant challenge: to learn and acquire new technologies
-          and apply them accurately and creatively.
-        </p>
+      <div className="bg-black min-h-[110vh] proyectos-x font-medium  grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 content-center pt-[10%] pb-[10%] py-4">
+        <div className="">
+          <h2 className="text-white  pb-2 pt-4">
+            My background is in Literature and Philosophy, and I took my first
+            steps into the world of programming out of curiosity. When I took my
+            first course at Platform 5, an online school, I realized that my
+            passions and the areas where my motivations lay (focused on the
+            study of language and logic) were not only compatible but also
+            complementary and consistent.
+          </h2>
+        </div>
+        <div className="pl-[17%]">
+          <div className=" py-2">
+            <button
+              className="text-black w-[80%] px-[5%] h-[50px] mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border "
+              onClick={handleDownloadEnglishPdf}
+            >
+              Download Resume
+            </button>
+          </div>
+          <div className=" py-2">
+            <button
+              className="text-black w-[80%] px-[5%]  h-[50px] mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border "
+              onClick={handleDownloadSpanishPdf}
+            >
+              {"Download Resume (Spanish)"}
+            </button>
+          </div>
+        </div>
       </div>
+      {/* <div className="bg-black min-h-screen ">
+        <p className="proyectos-x text-[20px] text-white italic underline-offset-auto font-medium pt-[15%]">
+          {" "}
+          My background is in Literature and Philosophy, and I took my first
+          steps into the world of programming out of curiosity. When I took my
+          first course at Platform 5, an online school, I realized that my
+          passions and the areas where my motivations lay (focused on the study
+          of language and logic) were not only compatible but also complementary
+          and consistent.
+        </p>
+        <p className="proyectos-x text-[20px] text-white italic underline-offset-auto font-medium pt-[15%]">
+          Today, having successfully completed the JavaScript Bootcamp, I am
+          convinced and highly motivated to continue learning and to dedicate my
+          future to web development.{" "}
+        </p>
+      </div> */}
     </>
   );
 };
