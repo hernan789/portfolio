@@ -20,7 +20,9 @@ const Nabvar: React.FC = () => {
     };
   }, []);
   const opacity = Math.max(1 - scrolled / 200, 0);
-
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div
       className={`navbar fixed w-screen transition-all duration-300 ${
@@ -111,8 +113,14 @@ const Nabvar: React.FC = () => {
           duration={500}
           className="text-white cursor-pointer"
         >
-          <div className="absolute left-44 top-7">
+          {/* <div className="absolute left-44 top-7">
             <div className="max-sm:hidden bg-black w-8 h-8 rounded-full transition-all duration-1000"></div>
+          </div> */}
+          <div
+            className="absolute left-12 top-[31px] text-black"
+            onClick={scrollToTop}
+          >
+            <div className="font-medium text-xl pb-0 ">Hernán Duarte</div>
           </div>
         </ScrollLink>
       )}

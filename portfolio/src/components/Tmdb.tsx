@@ -17,13 +17,13 @@ function Tmdb() {
       <div className="proyectos-x grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 pt-16">
         <p className="">{project[0].description} </p>
         <div className="">
-          <h2 className="text-black border-b-1 border-white pb-2">
+          <h2 className="text-black border-b-1 border-black pb-2">
             {project[0].detail1}
           </h2>
-          <h2 className="text-black border-t-2 border-white py-2">
+          <h2 className="text-black border-t-2 border-black py-2">
             {project[0].detail2}
           </h2>
-          <h2 className="text-black border-t-2 border-white py-2">
+          <h2 className="text-black border-t-2 border-black py-2">
             {project[0].detail3}
           </h2>
         </div>

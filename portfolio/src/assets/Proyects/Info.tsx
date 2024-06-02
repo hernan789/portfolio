@@ -52,7 +52,7 @@ export const projectsInfo: ProjectInfo[] = [
     detail1: "I worked on both the front end and the back end. ",
     detail2:
       "Technologies: Typescript, Next.js, Tailwind CSS, Jest, Postman, Express, Docker, Sequelize, PostgreSQL, S3, AWS.",
-    detail3: "2024",
+    detail3: "January to April 2024",
     link1: "xxxx",
     link2: "xxxx",
   },
@@ -92,7 +92,8 @@ export const projectsInfo: ProjectInfo[] = [
     detail1:
       "I used PostgreSQL, Sequelize, Node.js, and Express on the backend, and React, Bootstrap, and Redux on the frontend.",
     detail2: "xxxx",
-    detail3: "xxxx",
+    detail3:
+      "Technologies: PostgreSQL, Sequelize, Node.js, Express, React, SASS, Bootstrap, Redux, AXIOS",
     link1: "xxxx",
     link2: "xxxx",
   },
@@ -108,7 +109,7 @@ export const projectsInfo: ProjectInfo[] = [
     displayName: "training",
     description: "xxxx",
     detail1:
-      "All the projects in here are not actually projects but excercises. Beginner, amateur excercises. All of them were made with the technologies known at the moment, and were made with great enthusiasm for learning and making another step in my developer career. Consider this excersices bellow as pictures of me as a baby. And do not forget to try them!",
+      "All the projects here are not actually projects but exercises—beginner, amateur exercises. All of them were made with the technologies known at the time and were created with great enthusiasm for learning and making another step in my developer career. Consider these exercises below as snapshots of me as a baby developer. And don't forget to try them!",
     detail2: "xxxx",
     detail3: "xxxx",
     link1: "xxxx",

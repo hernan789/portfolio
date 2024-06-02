@@ -12,7 +12,7 @@ function TrainingProjects() {
     <>
       <section className="bg-gradient-to-b from-purple-900 to-black min-h-full  text-white ">
         <h2 className="proyectos-h2 font-[550] pt-[30%] leading-none sm:tracking-[-2px] md:tracking-[-4px] text-white pb-[5%]">
-          {project[0].name} VER EL CODIGO EN SPARTA 2
+          {project[0].name}
         </h2>
 
         <p className="parrafo-resaltado text-justify font-medium italic justify pt-[2%] text-white  ">
@@ -29,9 +29,15 @@ function TrainingProjects() {
         <div className="proyectos-x font-medium  grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 pt-20 pb-[10%]">
           <img src={project[0].path2} />
           <div className="">
-            <h2 className="text-white border-b-1 border-white pb-2 pt-4">
-              This excercise is very useful to learn and memorize the rgb name
-              for colors.
+            <h2 className="text-white border-b-1 text-justify border-white pb-2 pt-4">
+              This exercise is very useful for learning and memorizing the RGB
+              values for colors. The challenge is to choose the correct color
+              based on the assigned RGB color model, enhancing your familiarity
+              with how colors are represented digitally. Additionally, I
+              implemented the Pomodoro Technique as a time management method to
+              improve focus and productivity while working on this exercise.
+              This combination of learning and efficient time use made the
+              exercise both educational and practical.
             </h2>
             <h2 className="text-white border-t-2 border-white py-2">
               HTML, CSS, JAVASCRIPT
@@ -56,12 +62,15 @@ function TrainingProjects() {
         <div className="proyectos-x font-medium  grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 pt-20 pb-[10%]">
           <img src={project[0].path4} />
           <div className="">
-            <h2 className="text-white border-b-1 border-white pb-2 pt-4">
-              Yes. The classic To Do List. The begginners excersice par
-              excellence. Why incorporate it in here? Well, It was one of my
-              first indicio of me being able to code. At that time I did not
-              know React; it was made using pure HTML, CSS and JavaScript
-              Vanilla.
+            <h2 className="text-white border-b-1 text-justify border-white pb-2 pt-4">
+              Yes, the classic To-Do List. It's the beginner's exercise par
+              excellence, a rite of passage for many new coders. Why include it
+              here? Well, it was one of my first clear indications that I could
+              code. At that time, I didn't know React; the project was built
+              using pure HTML, CSS, and vanilla JavaScript. This simple yet
+              fundamental exercise marked the beginning of my coding journey and
+              helped me understand the basics of web development, setting the
+              foundation for more complex projects in the future.
             </h2>
             <h2 className="text-white border-t-2 border-white py-2">
               HTML, CSS, JAVASCRIPT
@@ -86,11 +95,18 @@ function TrainingProjects() {
         <div className="proyectos-x font-medium  grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 pt-20 pb-[10%]">
           <img src={project[0].path3} />
           <div className="">
-            <h2 className="text-white border-b-1 border-white pb-2 pt-4">
-              {project[0].detail1}
+            <h2 className="text-white border-b-1 text-justify border-white pb-2 pt-4">
+              This project involved creating a site to display weather
+              conditions for any city worldwide, providing real-time data like
+              temperature, humidity, and wind speed. It interacts with the
+              Weather Channel API, retrieving and displaying data using jQuery
+              and AJAX. jQuery simplifies tasks like HTML manipulation and AJAX
+              calls, while AJAX enables asynchronous updates for a seamless user
+              experience. This ensures the site is responsive, efficient, and
+              user-friendly.
             </h2>
             <h2 className="text-white border-t-2 border-white py-2">
-              HTML, CSS, JAVASCRIPT, AXIOS
+              HTML, CSS, JAVASCRIPT, JQUERY, AJAX
             </h2>
             <h2 className="text-white border-t-2 border-white py-2">
               <button className="w-[200px] h-[50px] mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border">
