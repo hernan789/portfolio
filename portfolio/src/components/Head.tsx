@@ -1,6 +1,9 @@
 import { useState } from "react";
-
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { shift } from "../state/theme";
 const Head: React.FC = () => {
+  const dispatch = useDispatch();
   const [hover, setHover] = useState<boolean>(false);
 
   const handleMouseEnter = () => {
@@ -10,7 +13,9 @@ const Head: React.FC = () => {
   const handleMouseLeave = () => {
     setHover(false);
   };
-
+  useEffect(() => {
+    dispatch(shift({ light: true }));
+  }, []);
   const firstLine = hover ? "Full-stack" : "Hernán";
   const secondLine = hover ? "developer." : "Duarte";
 

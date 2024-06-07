@@ -1,12 +1,15 @@
+import { useDispatch } from "react-redux";
 import { projectsInfo } from "../assets/Proyects/Info";
 import { useEffect } from "react";
+import { shift } from "../state/theme";
 function MiTurnoWeb() {
   // const { turno } = useParams<{ turno: string }>();
-
+  const dispatch = useDispatch();
   const project = projectsInfo.filter((project) => {
     return "turno" == project.displayName;
   });
   useEffect(() => {
+    dispatch(shift({ light: true }));
     window.scrollTo({ top: 0 });
   }, []);
   console.log(project);
@@ -39,7 +42,7 @@ function MiTurnoWeb() {
           right tools and technologies.
         </div>
       </div>
-      <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col sm:flex-row gap-14 pb-[10%]">
+      <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col 2xl:flex-row gap-14 pb-[10%]">
         <div className="proyectos-texto-derecha font-medium italic justify pt-[20%]">
           Every day, we merged all the updates we made using a dedicated branch
           in accordance with an accurate git flow. I researched available online
@@ -62,9 +65,9 @@ function MiTurnoWeb() {
             with a SCRUM master every Monday and demos every Friday, during
             which we showcased our progress to a jury.
           </p>
-          <div className="grid justify-center pt-[5%]  pb-[5%] bg-black">
+          <div className="grid justify-center pt-[5%]  pb-[5%] bg-black ">
             <img
-              className="mt-8 grid justify-center img-proyect rounded"
+              className="mt-8 grid justify-center img-proyect rounded "
               src={project[0].path7}
             />
           </div>
@@ -85,10 +88,10 @@ function MiTurnoWeb() {
         </div>
       </section>
 
-      <div className=" min-h-full align-middle  bg-black flex flex-col text-white text-xl font-medium ">
-        <div className="flex flex-row justify-evenly py-[3%]">
+      <div className=" min-h-full align-middle justify-items-center bg-black flex flex-col text-white text-xl font-medium ">
+        <div className="flex flex-row justify-evenly py-[3%] max-[450px]:flex-col max-[450px]:grid justify-items-center">
           <a href={project[0].link1}>
-            <button className="w-[200px] h-[50px] text-black mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border">
+            <button className="w-[200px] h-[50px] text-black mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border ">
               Frontend
             </button>
           </a>

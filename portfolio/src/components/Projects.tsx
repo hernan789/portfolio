@@ -1,6 +1,15 @@
 import { projectsInfo } from "../assets/Proyects/Info";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { shift } from "../state/theme";
+
 const Projects: React.FC = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(shift({ light: false }));
+  }, []);
   return (
     <section className="bg-black min-h-full text-white pb-10">
       <h2 className="proyectos-h2 font-[550] leading-none sm:tracking-[-2px] md:tracking-[-4px]  text-white">
