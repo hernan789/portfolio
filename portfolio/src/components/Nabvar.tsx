@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-
+import { useSelector } from "react-redux";
 const Nabvar: React.FC = () => {
+  const { light } = useSelector((state: any) => state.shift);
+  console.log("este es el valor de light", light);
   const [isOpen, setIsOpen] = useState(true);
   const [scrolled, setScrolled] = useState(0);
   const [hovered, setHovered] = useState(false);
@@ -117,7 +119,9 @@ const Nabvar: React.FC = () => {
             <div className="max-sm:hidden bg-black w-8 h-8 rounded-full transition-all duration-1000"></div>
           </div> */}
           <div
-            className="absolute left-12 top-[31px] text-black"
+            className={`absolute left-12 top-[31px] ${
+              light ? "text-black" : "text-white"
+            }`}
             onClick={scrollToTop}
           >
             <div className="font-medium text-xl pb-0 ">Hernán Duarte</div>

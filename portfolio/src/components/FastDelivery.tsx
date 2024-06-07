@@ -51,7 +51,7 @@ function FastDelivery() {
       </div>
 
       <section className="min-h-full bg-yellow-100 pt-[5%] ">
-        <p className="parrafo-resaltado text-justify font-medium italic justify pt-[5%] text-black ">
+        <p className="parrafo-resaltado  font-medium italic justify pt-[5%] text-black ">
           Throughout this project, I honed my expertise in full-stack
           development, delving deeply into TypeScript and Next.js. Challenges
           arose in fine-tuning database queries using Sequelize, leading to
@@ -69,7 +69,7 @@ function FastDelivery() {
       </section>
 
       <div className=" min-h-full align-middle  bg-black flex flex-col text-white text-xl font-medium ">
-        <div className="flex flex-row justify-evenly py-[3%]">
+        <div className="flex flex-row justify-evenly py-[3%] max-[450px]:flex-col max-[450px]:grid justify-items-center">
           <Link to={project[0].link1}>
             <button className="w-[200px] h-[50px] text-black mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border">
               Frontend
