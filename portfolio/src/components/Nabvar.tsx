@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { useSelector } from "react-redux";
+
 const Nabvar: React.FC = () => {
-  const { light } = useSelector((state: any) => state.shift);
-  console.log("este es el valor de light", light);
   const [isOpen, setIsOpen] = useState(true);
   const [scrolled, setScrolled] = useState(0);
   const [hovered, setHovered] = useState(false);
@@ -34,7 +32,7 @@ const Nabvar: React.FC = () => {
       onMouseLeave={() => setHovered(false)}
     >
       <button
-        className="text-black font-medium text-2xl md:hidden"
+        className="text-white font-medium text-2xl md:hidden"
         onClick={toggleMenu}
       >
         Menu
@@ -57,9 +55,9 @@ const Nabvar: React.FC = () => {
               to="about"
               smooth={true}
               duration={500}
-              className="text-white cursor-pointer"
+              className="text-black cursor-pointer"
             >
-              <a className="text-black font-medium hover:underline text-xl">
+              <a className="text-white font-medium hover:underline text-xl">
                 About Me
               </a>
             </ScrollLink>
@@ -71,7 +69,7 @@ const Nabvar: React.FC = () => {
               duration={500}
               className="text-white cursor-pointer"
             >
-              <a className="text-black font-medium hover:underline text-xl">
+              <a className="text-white font-medium hover:underline text-xl">
                 Technologies
               </a>
             </ScrollLink>
@@ -84,7 +82,7 @@ const Nabvar: React.FC = () => {
               className="text-white cursor-pointer"
             >
               <a
-                className="text-black font-medium hover:underline text-xl"
+                className="text-white font-medium hover:underline text-xl"
                 href="#"
               >
                 Projects
@@ -99,7 +97,7 @@ const Nabvar: React.FC = () => {
               className="text-white cursor-pointer"
             >
               <a
-                className="text-black font-medium hover:underline  text-xl"
+                className="text-white font-medium hover:underline  text-xl"
                 href="#"
               >
                 Contact
@@ -113,18 +111,16 @@ const Nabvar: React.FC = () => {
           to="head"
           smooth={true}
           duration={500}
-          className="text-white cursor-pointer"
+          className="  cursor-pointer "
         >
           {/* <div className="absolute left-44 top-7">
             <div className="max-sm:hidden bg-black w-8 h-8 rounded-full transition-all duration-1000"></div>
           </div> */}
           <div
-            className={`absolute left-12 top-[31px] ${
-              light ? "text-black" : "text-white"
-            }`}
+            className={` absolute   left-12 top-[31px] `}
             onClick={scrollToTop}
           >
-            <div className="font-medium text-xl pb-0 ">Hernán Duarte</div>
+            <div className="logo font-medium  text-xl pb-0 ">Hernán Duarte</div>
           </div>
         </ScrollLink>
       )}

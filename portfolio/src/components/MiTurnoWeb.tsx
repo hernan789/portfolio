@@ -1,15 +1,11 @@
-import { useDispatch } from "react-redux";
 import { projectsInfo } from "../assets/Proyects/Info";
 import { useEffect } from "react";
-import { shift } from "../state/theme";
+
 function MiTurnoWeb() {
-  // const { turno } = useParams<{ turno: string }>();
-  const dispatch = useDispatch();
   const project = projectsInfo.filter((project) => {
     return "turno" == project.displayName;
   });
   useEffect(() => {
-    dispatch(shift({ light: true }));
     window.scrollTo({ top: 0 });
   }, []);
   console.log(project);

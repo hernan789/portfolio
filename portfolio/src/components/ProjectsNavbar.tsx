@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+
 const ProjectsNavbar: React.FC = () => {
-  const { light } = useSelector((state: any) => state.shift);
   const [isOpen, setIsOpen] = useState(true);
   const [scrolled, setScrolled] = useState(0);
   const [hovered, setHovered] = useState(false);
@@ -60,11 +59,7 @@ const ProjectsNavbar: React.FC = () => {
                 text-white
                cursor-pointer"
             >
-              <a
-                className={`${
-                  light ? "text-black" : "text-white"
-                } font-medium hover:underline text-xl `}
-              >
+              <a className="text-black font-medium hover:underline text-xl ">
                 Back
               </a>
             </Link>
@@ -76,7 +71,7 @@ const ProjectsNavbar: React.FC = () => {
           to="head"
           smooth={true}
           duration={500}
-          className={`${light ? "text-black" : "text-white"}  cursor-pointer`}
+          className={`text-black  cursor-pointer`}
         >
           <div className="absolute left-12 top-[35px]" onClick={scrollToTop}>
             <div className="font-medium text-xl pb-0 ">Hernán Duarte</div>
