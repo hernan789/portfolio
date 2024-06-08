@@ -52,7 +52,7 @@ function Tmdb() {
           <h2 className="proyectos-h2 text-white font-medium sm:tracking-[-2px] md:tracking-[-2px] leading-[1]">
             More than a project, an experience
           </h2>
-          <p className="parrafo-resaltado font-medium pt-[7%] text-white ">
+          <p className="parrafo-resaltado font-medium pt-[5%] text-white ">
             For me, this particular project was not only about proving myself,
             but it was also a good opportunity to take on the burden of building
             a whole application, researching to learn new features and skills,

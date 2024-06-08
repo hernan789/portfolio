@@ -19,6 +19,8 @@ body {
 @media (max-width: 767px) {
   .navbar {
     margin-left: 20px;
+    filter: invert(1);
+    mix-blend-mode: difference;
   }
   :hover.navbar {
     padding-left: 20px;
@@ -189,24 +191,36 @@ body {
 @media (min-width: 1199px) {
   .navbar {
     padding-left: 260px;
+    filter: invert(1);
+    mix-blend-mode: difference;
   }
+
   :hover.navbar {
+    mix-blend-mode: normal;
     padding-left: 260px;
     padding-bottom: 100px;
-    background-color: white;
+    background-color: black;
+    color: black;
     width: max-content;
     opacity: 100%;
+    .logo {
+      mix-blend-mode: difference;
+      filter: invert(1);
+    }
+    /* filter: invert(1); */
   }
   .projectsNavbar {
     padding-left: 260px;
+    filter: invert(1);
+    mix-blend-mode: difference;
   }
-  /* :hover.projectsNavbar {
+  :hover.projectsNavbar {
     padding-left: 260px;
     padding-bottom: 100px;
     background-color: white;
     width: max-content;
     color: black;
-  } */
+  }
   .head {
     margin-left: 260px; /* Establecer un margen izquierdo aún mayor */
 
@@ -255,7 +269,7 @@ body {
     padding-top: 10%;
   }
   .parrafo-resaltado {
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 260px;
     padding-right: 260px;
   }
