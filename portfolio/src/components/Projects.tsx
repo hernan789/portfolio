@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
                 <h3 className="pt-4">{project.name}</h3>
                 <div className="grid justify-items-center">
                   <img
-                    className="mt-8 w-[350px] h-[550px] "
+                    className="mt-8 w-[580px] h-[580px] "
                     src={project.path}
                   />
                 </div>
