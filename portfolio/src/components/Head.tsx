@@ -17,7 +17,7 @@ const Head: React.FC = () => {
   return (
     <section className="flex head min-h-screen h-auto ">
       <h1
-        className="mt-[500px] xl:mt-[500px] text-black leading-none sm:tracking-[-2px] md:tracking-[-8px]  font-[550] xl: lg:text-[135px] xl:text-[180px]"
+        className=" min-[60px]:mt-[90%] sm:mt-[50%] lg:mt-[50%] xl:mt-[30%] text-black leading-none sm:tracking-[-2px] md:tracking-[-8px]  font-[550] xl: lg:text-[135px] xl:text-[180px]"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >

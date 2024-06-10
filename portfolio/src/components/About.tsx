@@ -146,7 +146,7 @@ const words3 = [
   "design",
   "test",
   "build",
-  "start over and over again",
+  "restart",
 ];
 const About: React.FC = () => {
   const [currentWordIndex1, setCurrentWordIndex1] = useState(0);
@@ -208,7 +208,7 @@ const About: React.FC = () => {
             setCharIndex(0);
             setCurrentWordIndex3((currentWordIndex3 + 1) % words3.length);
             setPhase("first");
-          }, 4000); // Wait 1 second before starting the next word
+          }, 1000); // Wait 1 second before starting the next word
         }
       }
     }, 80); // Adjust the speed of typing here
@@ -258,7 +258,7 @@ const About: React.FC = () => {
           <mark> </mark>
         </div>
       </div>
-      <div className="bg-black min-h-[110vh] proyectos-x font-medium  grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 content-center pt-[10%] pb-[10%] py-4">
+      <div className="bg-black min-h-[110vh] proyectos-x font-medium grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-12 content-center pt-[10%] pb-[10%] py-4">
         <div className="">
           <h2 className="text-white  pb-2 pt-4">
             My background is in Literature and Philosophy, and I took my first
@@ -269,22 +269,27 @@ const About: React.FC = () => {
             complementary and consistent.
           </h2>
         </div>
-        <div className="pl-[17%]">
-          <div className=" py-2">
-            <button
-              className="text-black w-[80%] px-[5%] h-[50px] mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border "
-              onClick={handleDownloadEnglishPdf}
-            >
-              Download Resume
-            </button>
-          </div>
-          <div className=" py-2">
-            <button
-              className="text-black w-[80%] px-[5%]  h-[50px] mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border "
-              onClick={handleDownloadSpanishPdf}
-            >
-              {"Download Resume (Spanish)"}
-            </button>
+        <div className="grid justify-items-center">
+          <div
+            className="grid justify-items-start content-center
+          "
+          >
+            <div className="">
+              <button
+                className="text-black w-[151%] px-[5%] h-[50px] mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded flex items-center justify-center hover:bg-white hover:border "
+                onClick={handleDownloadEnglishPdf}
+              >
+                Download Resume
+              </button>
+            </div>
+            <div className=" py-2">
+              <button
+                className="text-black w-[100%] px-[5%]  h-[auto] mt-4 mb-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border "
+                onClick={handleDownloadSpanishPdf}
+              >
+                {"Download Resume (Spanish)"}
+              </button>
+            </div>
           </div>
         </div>
       </div>

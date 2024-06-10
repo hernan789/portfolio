@@ -32,7 +32,7 @@ const Nabvar: React.FC = () => {
       onMouseLeave={() => setHovered(false)}
     >
       <button
-        className="text-white font-medium text-2xl md:hidden"
+        className="text-white absolute font-medium text-2xl  md:hidden"
         onClick={toggleMenu}
       >
         Menu
@@ -117,10 +117,12 @@ const Nabvar: React.FC = () => {
             <div className="max-sm:hidden bg-black w-8 h-8 rounded-full transition-all duration-1000"></div>
           </div> */}
           <div
-            className={` absolute   left-12 top-[31px] `}
+            className={` absolute max-[1199px]:hidden  left-12 top-[31px] `}
             onClick={scrollToTop}
           >
-            <div className="logo font-medium  text-xl pb-0 ">Hernán Duarte</div>
+            <div className="logo font-medium  text-xl pb-0  ">
+              Hernán Duarte
+            </div>
           </div>
         </ScrollLink>
       )}
