@@ -3,13 +3,9 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 
 const ProjectsNavbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(true);
   const [scrolled, setScrolled] = useState(0);
   const [hovered, setHovered] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
@@ -33,16 +29,18 @@ const ProjectsNavbar: React.FC = () => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <button
-        className="text-black font-medium text-2xl md:hidden"
-        onClick={toggleMenu}
-      >
-        Menu
-      </button>
+      <Link to="/" className={` absolute left-2 backNav`}>
+        <a
+          className={`min-[1199px]:hidden  text-black font-medium hover:underline text-xl   ${{
+            opacity: hovered ? 1 : opacity,
+          }}`}
+        >
+          Back
+        </a>
+      </Link>
+
       <div
-        className={`${
-          isOpen ? "hidden" : "block"
-        } absolute md:flex md:relative ${
+        className={`absolute md:flex md:relative ${
           scrolled ? "mt-8" : "mt-16"
         } transition-all duration-300 w-screen`}
       >
@@ -55,7 +53,7 @@ const ProjectsNavbar: React.FC = () => {
           <li className="mr-6 ">
             <Link
               to="/"
-              className="absolute left-2 top-1 
+              className="max-[1199px]:hidden  absolute left-2 top-1 
                 text-white
                cursor-pointer"
             >
@@ -73,7 +71,10 @@ const ProjectsNavbar: React.FC = () => {
           duration={500}
           className={`text-black  cursor-pointer`}
         >
-          <div className="absolute left-12 top-[35px]" onClick={scrollToTop}>
+          <div
+            className="absolute left-12 top-[35px] max-[1199px]:hidden "
+            onClick={scrollToTop}
+          >
             <div className="font-medium text-xl pb-0 ">Hernán Duarte</div>
           </div>
         </ScrollLink>

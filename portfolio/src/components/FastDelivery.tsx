@@ -28,17 +28,17 @@ function FastDelivery() {
           </h2>
         </div>
       </div>
-      <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col sm:flex-row gap-14">
+      <div className="proyectos-x pt-[5%]   grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 justify-items-center gap-10">
         <img className="mt-8 img-proyect rounded" src={project[0].path6} />
-        <div className="proyectos-texto-derecha font-medium italic pt-[20%]">
+        <div className="font-medium italic pt-[50%]">
           A last-mile logistics company has hundreds of delivery drivers who
           each receive parcels at the start of the day and must deliver them
           throughout the day. Thanks to this APP, a company can monitor delivery
           drivers, assign or reassign packages, and intervene to edit shipments.
         </div>
       </div>
-      <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col sm:flex-row gap-14 pb-[10%]">
-        <div className="proyectos-texto-derecha font-medium italic ">
+      <div className="proyectos-x pt-[5%] pl-[10%]  grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-10 pb-[10%] justify-items-center">
+        <div className="pt-[50%] font-medium italic ">
           The app has two different roles: the delivery driver role, where
           drivers can freely register and log in to select the packages they
           will deliver that day; and the administrator role, where the company
@@ -47,7 +47,7 @@ function FastDelivery() {
           assigned to each driver, and create, view, and edit packages to be
           sent.
         </div>
-        <img className="mt-8 img-proyect rounded" src={project[0].path5} />
+        <img className="mt-8 img-proyect rounded " src={project[0].path5} />
       </div>
 
       <section className="min-h-full bg-yellow-100 pt-[5%] ">
