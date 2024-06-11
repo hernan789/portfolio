@@ -135,7 +135,7 @@
 import React, { useState, useEffect } from "react";
 import resume from "../assets/Resumes/Hernan Duarte Resume.pdf";
 import cv from "../assets/Resumes/Hernan Luis Duarte CV (Spanish).pdf";
-const words1 = ["Software Engineering", "Philosophy", "Linguistics"];
+const words1 = ["software development ", "philosophy", "linguistics"];
 const words2 = ["teamwork", "coding", "studying", "problem solving"];
 const words3 = [
   "work",

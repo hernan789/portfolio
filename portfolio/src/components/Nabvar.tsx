@@ -26,8 +26,8 @@ const Nabvar: React.FC = () => {
   return (
     <div
       className={`navbar fixed w-screen transition-all duration-300 ${
-        scrolled ? "h-16" : "h-32"
-      } z-50`}
+        scrolled && isOpen ? "h-16" : "h-32"
+      } z-50 ${!isOpen && "h-[250px]"}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
