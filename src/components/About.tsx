@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import resume from "../assets/Resumes/Hernan Duarte Resume.pdf";
+import resume from "../assets/Resumes/Hernan  Duarte resume.pdf";
 import cv from "../assets/Resumes/Hernan Luis Duarte CV (Spanish).pdf";
 const words1 = ["software development ", "philosophy", "linguistics"];
 const words2 = ["teamwork", "coding", "studying", "problem solving"];
@@ -26,7 +26,6 @@ const About: React.FC = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      //First group of words running
       if (phase === "first") {
         const currentWord = words1[currentWordIndex1];
         const nextWord = words1[(currentWordIndex1 + 1) % words1.length];
@@ -42,7 +41,7 @@ const About: React.FC = () => {
             setCharIndex(0);
             setCurrentWordIndex1((currentWordIndex1 + 1) % words1.length);
             setPhase("second");
-          }, 1000); // Wait 1 second before starting the next word
+          }, 1000);
         }
       } else if (phase === "second") {
         const currentWord = words2[currentWordIndex2];
@@ -59,7 +58,7 @@ const About: React.FC = () => {
             setCharIndex(0);
             setCurrentWordIndex2((currentWordIndex2 + 1) % words2.length);
             setPhase("third");
-          }, 1000); // Wait 1 second before starting the next word
+          }, 1000);
         }
       } else if (phase === "third") {
         const currentWord = words3[currentWordIndex3];
@@ -74,10 +73,10 @@ const About: React.FC = () => {
             setCharIndex(0);
             setCurrentWordIndex3((currentWordIndex3 + 1) % words3.length);
             setPhase("first");
-          }, 1000); // Wait 1 second before starting the next word
+          }, 1000);
         }
       }
-    }, 80); // Adjust the speed of typing here
+    }, 80);
 
     return () => clearInterval(interval);
   }, [charIndex, currentWordIndex1, currentWordIndex2, phase]);
@@ -159,22 +158,6 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* <div className="bg-black min-h-screen ">
-        <p className="proyectos-x text-[20px] text-white italic underline-offset-auto font-medium pt-[15%]">
-          {" "}
-          My background is in Literature and Philosophy, and I took my first
-          steps into the world of programming out of curiosity. When I took my
-          first course at Platform 5, an online school, I realized that my
-          passions and the areas where my motivations lay (focused on the study
-          of language and logic) were not only compatible but also complementary
-          and consistent.
-        </p>
-        <p className="proyectos-x text-[20px] text-white italic underline-offset-auto font-medium pt-[15%]">
-          Today, having successfully completed the JavaScript Bootcamp, I am
-          convinced and highly motivated to continue learning and to dedicate my
-          future to web development.{" "}
-        </p>
-      </div> */}
     </>
   );
 };
