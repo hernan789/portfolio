@@ -24,11 +24,23 @@ body {
     mix-blend-mode: difference;
   }
   :hover.navbar {
-    filter: invert(12%);
+    filter: invert(50%);
 
     min-height: screen;
   }
+  .logo {
+    filter: invert(80%);
 
+    z-index: 200;
+  }
+  .smNav {
+    filter: invert(80%);
+    mix-blend-mode: difference;
+  }
+  :hover.smNav {
+    filter: invert(50%);
+    mix-blend-mode: difference;
+  }
   .projectsNavbar {
     margin-left: 10px;
     padding-top: 3%;
@@ -60,8 +72,9 @@ body {
   }
   .logos {
     width: auto;
-    height: 150px;
+    height: 50px;
     font-size: 200px;
+    /* padding-top: 40%; */
   }
   .proyectos-h2 {
     padding-left: 20px;

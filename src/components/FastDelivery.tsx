@@ -60,7 +60,7 @@ function FastDelivery() {
           front-end and back-end development, I gained valuable insights into
           crafting efficient, user-friendly interfaces and optimizing
           server-side functionality. This experience fortified my foundation in
-          software engineering and fueled my passion for tackling complex
+          software development and fueled my passion for tackling complex
           technical challenges head-on.
         </p>
         <div className="grid justify-center pt-[5%]  pb-[5%] bg-yellow-100 ">

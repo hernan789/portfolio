@@ -33,8 +33,7 @@ function Tmdb() {
         <div className="proyectos-g pt-[10%] font-medium italic">
           This was my first full stack project. It was very excited to plan the
           bolierplate, the think about an accurate schema design and test its
-          accuracy when the APP began to scale. I left the frontend design to
-          the end.
+          accuracy when the APP began to scale.
         </div>
       </div>
       <div className="proyectos-x pt-[7%] pl-[10%] flex flex-col 2xl:flex-row gap-14 pb-[10%]  bg-orange-500">

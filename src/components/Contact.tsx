@@ -39,8 +39,7 @@ const Contact: React.FC = () => {
   return (
     <div className=" min-h-screen align-middle contact bg-white flex flex-col text-black text-xl font-medium ">
       <h2 className="text-lx2 font-bold pt-4">
-        Contact me bellow, or you just can visit my LinkedIn and Github
-        profiles.
+        Contact me bellow and visit my LinkedIn and Github profiles.
       </h2>
       <form onSubmit={handleSubmit} className="flex flex-col mt-8">
         <label htmlFor="name">Name</label>

@@ -109,7 +109,7 @@ export const projectsInfo: ProjectInfo[] = [
     displayName: "training",
     description: "xxxx",
     detail1:
-      "All the projects here are not actually projects but exercises—beginner, amateur exercises. All of them were made with the technologies known at the time and were created with great enthusiasm for learning and making another step in my developer career. Consider these exercises below as snapshots of me as a baby developer. And don't forget to try them!",
+      "All the projects here are not actually projects but exercises—beginner, amateur exercises. All of them were made with the technologies known at the time and were created with great enthusiasm for learning and making another step in my developer career. Consider these exercises below as snapshots of me as a apprentice developer. And don't forget to try them!",
     detail2: "xxxx",
     detail3: "xxxx",
     link1: "xxxx",
