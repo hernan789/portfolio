@@ -157,7 +157,7 @@ body {
     min-height: screen;
   }
   .head {
-    margin-left: 60px; /* Establecer un margen izquierdo diferente */
+    margin-left: 60px;
 
     font-size: 120px;
   }
@@ -251,8 +251,7 @@ body {
     color: black;
   }
   .head {
-    margin-left: 260px; /* Establecer un margen izquierdo aún mayor */
-
+    margin-left: 260px;
     font-size: 120px;
   }
   .parrafo {

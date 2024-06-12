@@ -107,9 +107,6 @@ const Nabvar: React.FC = () => {
             duration={500}
             className="  cursor-pointer "
           >
-            {/* <div className="absolute left-44 top-7">
-            <div className="max-sm:hidden bg-black w-8 h-8 rounded-full transition-all duration-1000"></div>
-          </div> */}
             <div
               className={` absolute max-[1199px]:hidden  left-12 top-[31px] `}
               onClick={scrollToTop}
