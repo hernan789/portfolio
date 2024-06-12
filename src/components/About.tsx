@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import resume from "../assets/Resumes/Hernan Luis Duarte Resume.pdf";
+import resume from "../assets/Resumes/Hernan  Duarte resume.pdf";
 import cv from "../assets/Resumes/Hernan Luis Duarte CV (Spanish).pdf";
 const words1 = ["software development ", "philosophy", "linguistics"];
 const words2 = ["teamwork", "coding", "studying", "problem solving"];
