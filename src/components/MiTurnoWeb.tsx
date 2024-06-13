@@ -73,10 +73,11 @@ function MiTurnoWeb() {
       <section className="min-h-full">
         <div className="grid justify-center pt-[5%] pb-[5%] bg-yellow-100 ">
           <p className="parrafo-resaltado font-medium pt-[7%] ">
-            For almost two months, we were involved in the project, learning new
-            technologies and honing our soft skills. The final result was
-            applauded by the jury and left us with a great sense of success and
-            confidence in ourselves.
+            Over the course of nearly two months, we dedicated ourselves to the
+            project, mastering new technologies and refining our soft skills.
+            Our hard work culminated in a final product that received high
+            praise from the jury, leaving us with a profound sense of
+            accomplishment and boosted confidence.
           </p>
           <div className="grid justify-center pt-[5%]">
             <img className="mt-8 img-proyect rounded" src={project[0].path5} />

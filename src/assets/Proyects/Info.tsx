@@ -53,8 +53,8 @@ export const projectsInfo: ProjectInfo[] = [
     detail2:
       "Technologies: Typescript, Next.js, Tailwind CSS, Jest, Postman, Express, Docker, Sequelize, PostgreSQL, S3, AWS.",
     detail3: "January to April 2024",
-    link1: "xxxx",
-    link2: "xxxx",
+    link1: "https://github.com/Dadario23/fast-delivery-front",
+    link2: "https://github.com/hernan789/fast-Delivery-Back",
   },
   {
     name: "Mi Turno Web",
@@ -94,8 +94,8 @@ export const projectsInfo: ProjectInfo[] = [
     detail2: "xxxx",
     detail3:
       "Technologies: PostgreSQL, Sequelize, Node.js, Express, React, SASS, Bootstrap, Redux, AXIOS",
-    link1: "xxxx",
-    link2: "xxxx",
+    link1: "https://github.com/hernan789/26-checkpoint-TMDB/tree/main/src",
+    link2: "https://github.com/hernan789/26-checkpoint-TMDB/tree/main/api",
   },
   {
     name: "Training projects",
