@@ -9,7 +9,7 @@ const MenuItem: React.FC<{ to: string; label: string }> = ({ to, label }) => (
       duration={500}
       className="text-black cursor-pointer"
     >
-      <a className="text-white font-medium hover:underline text-xl">{label}</a>
+      <a className="text-white font-normal hover:underline text-xl">{label}</a>
     </ScrollLink>
   </li>
 );

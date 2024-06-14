@@ -96,26 +96,26 @@ const About: React.FC = () => {
   };
   return (
     <>
-      <div className="bg-[#ff0] min-h-screen  ">
-        <div className="mt-10 align-middle justify-center parrafo text-black italic pt-60 font-bold text-wrap ">
+      <div className="bg-[#ff0] min-h-[110vh] grid items-center">
+        <div className="mt-10 justify-center parrafo text-black  font-bold text-wrap ">
           <ul className="list-none p-0 m-0">
-            <li className="mb-2">I am a full-stack developer</li>
+            <li className="mb-0">I am a full-stack developer</li>
             <li>
               trained in&nbsp;
-              <mark className="font-bold underline underline-offset-8">
+              <mark className="font-bold italic underline underline-offset-8">
                 {displayedText1}
               </mark>
               &nbsp;passionate about&nbsp;
             </li>
-            <li className="mb-2">
+            <li className="mb-0">
               {" "}
-              <mark className="font-bold underline underline-offset-8">
+              <mark className="font-bold italic underline underline-offset-8">
                 {displayedText2}
               </mark>
               &nbsp;who is ready to&nbsp;
             </li>
             {/* <li>ready to</li> */}
-            <mark className="font-bold underline underline-offset-8">
+            <mark className="font-bold italic underline underline-offset-8">
               {displayedText3}.
             </mark>
           </ul>

@@ -53,7 +53,7 @@ const ProjectsNavbar: React.FC = () => {
           <li className="mr-6 ">
             <Link
               to="/"
-              className="max-[1199px]:hidden  absolute left-2 top-1 
+              className="max-[1199px]:hidden  absolute  top-1 
                 text-white
                cursor-pointer"
             >
