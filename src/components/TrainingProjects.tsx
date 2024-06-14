@@ -7,7 +7,7 @@ function TrainingProjects() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
-  console.log(project);
+
   return (
     <>
       <section className="bg-gradient-to-b from-purple-900 to-black min-h-full  text-white ">

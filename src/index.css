@@ -42,7 +42,7 @@ body {
     mix-blend-mode: difference;
   }
   .projectsNavbar {
-    margin-left: 10px;
+    margin-left: 12px;
     padding-top: 3%;
     filter: invert(1);
     mix-blend-mode: difference;
@@ -60,6 +60,7 @@ body {
   .parrafo {
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 37%;
     align-items: center;
     font-size: 20px;
   }
@@ -79,7 +80,7 @@ body {
   .proyectos-h2 {
     padding-left: 20px;
     padding-right: 3%;
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 20%;
   }
   .proyectos-g {
@@ -112,7 +113,7 @@ body {
   .parrafo-resaltado {
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 20px;
+    font-size: 16px;
   }
   .contact {
     padding-left: 20px;
@@ -126,43 +127,45 @@ body {
   }
 }
 
-/* Estilos para pantallas medianas (768px o más) */
 @media (min-width: 768px) {
   .navbar {
     padding-left: 60px;
     filter: invert(1);
     mix-blend-mode: difference;
+    opacity: 100%;
   }
   :hover.navbar {
     mix-blend-mode: normal;
     padding-left: 60px;
     padding-bottom: 100px;
     background-color: black;
+    color: black;
     width: max-content;
+    opacity: 100%;
     .logo {
       mix-blend-mode: difference;
       filter: invert(1);
     }
   }
   .projectsNavbar {
-    padding-left: 60px;
+    padding-left: 0px;
     filter: invert(1);
     mix-blend-mode: difference;
   }
   .backNav {
-    margin-left: 60px;
+    margin-left: 48px;
     margin-top: 50px;
   }
   :hover.backNav {
     min-height: screen;
   }
   .head {
-    margin-left: 60px;
+    margin-left: 50px;
 
     font-size: 120px;
   }
   .parrafo {
-    margin-left: 80px;
+    margin-left: 60px;
     margin-right: 80px;
     align-items: center;
     font-size: 40px;
@@ -179,7 +182,7 @@ body {
     height: 150px;
   }
   .proyectos-h2 {
-    padding-left: 60px;
+    padding-left: 50px;
     padding-top: 150px;
     font-size: 80px;
   }
@@ -194,7 +197,7 @@ body {
     font-size: 20px;
   }
   .proyectos-texto-derecha {
-    padding-left: 20px;
+    padding-left: 60px;
     padding-right: 20px;
     font-size: 40px;
   }
@@ -216,7 +219,6 @@ body {
   }
 }
 
-/* Estilos para pantallas grandes (1024px o más) */
 @media (min-width: 1199px) {
   .navbar {
     padding-left: 260px;
@@ -239,19 +241,19 @@ body {
     /* filter: invert(1); */
   }
   .projectsNavbar {
-    padding-left: 260px;
+    padding-left: 254px;
     filter: invert(1);
     mix-blend-mode: difference;
   }
   :hover.projectsNavbar {
-    padding-left: 260px;
+    padding-left: 254px;
     padding-bottom: 100px;
     background-color: white;
     width: max-content;
     color: black;
   }
   .head {
-    margin-left: 260px;
+    margin-left: 245px;
     font-size: 120px;
   }
   .parrafo {
@@ -271,7 +273,7 @@ body {
     /* font-size: 120px; */
   }
   .proyectos-h2 {
-    padding-left: 260px;
+    padding-left: 250px;
     padding-right: 260px;
     padding-top: 150px;
     font-size: 90px;
@@ -294,7 +296,7 @@ body {
     padding-left: 20px;
     padding-right: 10px;
     font-size: 30px;
-    padding-top: 10%;
+    padding-top: 19%;
   }
   .parrafo-resaltado {
     font-size: 25px;
@@ -307,14 +309,7 @@ body {
     object-fit: cover;
   }
 }
-@media (min-width: 1560px) {
-  .proyectos-texto-derecha {
-    padding-left: 80px;
-    padding-right: 120px;
-    font-size: 30px;
-    padding-top: 20%;
-  }
-}
+
 .efectoRevealOut {
   animation-name: efectoRevealOut;
   animation-duration: 1s;

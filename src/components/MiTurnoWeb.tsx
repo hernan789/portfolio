@@ -39,7 +39,7 @@ function MiTurnoWeb() {
         </div>
       </div>
       <div className="proyectos-x pt-[5%] pl-[10%] flex flex-col 2xl:flex-row gap-14 pb-[10%]">
-        <div className="proyectos-texto-derecha font-medium italic justify pt-[20%]">
+        <div className="proyectos-texto-derecha font-medium  justify pt-[20%]">
           Every day, we merged all the updates we made using a dedicated branch
           in accordance with an accurate git flow. I researched available online
           documentation and utilized creativity to find solutions to the
