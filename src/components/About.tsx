@@ -82,17 +82,11 @@ const About: React.FC = () => {
   }, [charIndex, currentWordIndex1, currentWordIndex2, phase]);
   const handleDownloadEnglishPdf = () => {
     const pdfUrl = resume;
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Hernán Duarte Resume.pdf";
-    link.click();
+    window.open(pdfUrl, "_blank");
   };
   const handleDownloadSpanishPdf = () => {
     const pdfUrl = cv;
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Hernán Duarte CV Spanish.pdf";
-    link.click();
+    window.open(pdfUrl, "_blank");
   };
   return (
     <>
@@ -123,7 +117,7 @@ const About: React.FC = () => {
           <mark> </mark>
         </div>
       </div>
-      <div className="bg-black min-h-[110vh] proyectos-x font-medium grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-12 content-center pt-[10%] pb-[10%] py-4">
+      <div className="bg-black min-h-[110vh] proyectos-x  font-medium grid min-[120px]:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-12 content-center pt-[10%] pb-[10%] py-4">
         <div className="">
           <h2 className="text-white  pb-2 pt-4">
             With a background in linguistics and philosophy, I ventured into
@@ -141,18 +135,18 @@ const About: React.FC = () => {
           >
             <div className="">
               <button
-                className="text-black w-[151%] px-[5%] h-[50px] mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded flex items-center justify-center hover:bg-white hover:border "
+                className="text-black w-[210px] min-[1198px]:w-[250px]  px-[5%] h-[50px] mt-4 mb-2 p-2 shadow-inner bg-[#ff0] rounded flex items-center justify-center hover:bg-white hover:border "
                 onClick={handleDownloadEnglishPdf}
               >
-                Download Resume
+                Resume
               </button>
             </div>
-            <div className=" py-2">
+            <div className=" ">
               <button
-                className="text-black w-[100%] px-[5%]  h-[auto] mt-4 mb-2 shadow-inner bg-[#ff0] rounded pl-50 flex items-center justify-center hover:bg-white hover:border "
+                className="text-black w-[210px] min-[1198px]:w-[250px] px-[5%]  h-[50px] mt-4 mb-2 shadow-inner bg-[#ff0] rounded  flex items-center justify-center hover:bg-white hover:border "
                 onClick={handleDownloadSpanishPdf}
               >
-                {"Download Resume (Spanish)"}
+                {"Resume (Spanish)"}
               </button>
             </div>
           </div>
